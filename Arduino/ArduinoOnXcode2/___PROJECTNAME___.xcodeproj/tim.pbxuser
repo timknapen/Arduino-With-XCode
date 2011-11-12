@@ -1,0 +1,103 @@
+// !$*UTF8*$!
+{
+	01706F540A347F6900E43B08 /* Make */ = {
+		activeExec = 0;
+	};
+	01706F5B0A34807400E43B08 /* Upload */ = {
+		activeExec = 0;
+	};
+	08FB7793FE84155DC02AAC07 /* Project object */ = {
+		activeBuildConfigurationName = Development;
+		activeTarget = 01706F540A347F6900E43B08 /* Make */;
+		addToTargets = (
+			01706F540A347F6900E43B08 /* Make */,
+		);
+		codeSenseManager = 22ACDB28146E9A590021C93A /* Code sense */;
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					551,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 342795901;
+			PBXWorkspaceStateSaveDate = 342795901;
+		};
+		perUserProjectItems = {
+			22F5F69C146EA68C004F0E2E /* PBXTextBookmark */ = 22F5F69C146EA68C004F0E2E /* PBXTextBookmark */;
+			22F5F69D146EA68C004F0E2E /* PBXBookmark */ = 22F5F69D146EA68C004F0E2E /* PBXBookmark */;
+			22F5F69E146EA68C004F0E2E /* PBXTextBookmark */ = 22F5F69E146EA68C004F0E2E /* PBXTextBookmark */;
+		};
+		sourceControlManager = 22ACDB27146E9A590021C93A /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	22ACDB27146E9A590021C93A /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	22ACDB28146E9A590021C93A /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	22ACDB40146E9AC60021C93A /* Makefile */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {729, 2860}}";
+			sepNavSelRange = "{982, 5}";
+			sepNavVisRange = "{0, 1113}";
+		};
+	};
+	22F5F69B146EA68B004F0E2E /* README */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {729, 486}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 166}";
+		};
+	};
+	22F5F69C146EA68C004F0E2E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 22ACDB40146E9AC60021C93A /* Makefile */;
+		name = "Makefile: 35";
+		rLen = 5;
+		rLoc = 982;
+		rType = 0;
+		vrLen = 1113;
+		vrLoc = 0;
+	};
+	22F5F69D146EA68C004F0E2E /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 22F5F69B146EA68B004F0E2E /* README */;
+	};
+	22F5F69E146EA68C004F0E2E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 22F5F69B146EA68B004F0E2E /* README */;
+		name = "README: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 166;
+		vrLoc = 0;
+	};
+}
