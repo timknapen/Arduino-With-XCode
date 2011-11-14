@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXFileReference section */
+		2233DE6B1471C21D00FEF4A0 /* Duemilanove.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Duemilanove.xcconfig; sourceTree = "<group>"; };
+		2233DE6C1471C21D00FEF4A0 /* NG.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = NG.xcconfig; sourceTree = "<group>"; };
+		2233DE6D1471C21D00FEF4A0 /* UNO.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = UNO.xcconfig; sourceTree = "<group>"; };
 		22ACDB40146E9AC60021C93A /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		22ACDB42146E9ACD0021C93A /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		22ACDB43146E9ACD0021C93A /* ArduinoProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArduinoProgram.h; sourceTree = "<group>"; };
@@ -108,8 +111,19 @@
 				22ACDB41146E9ACD0021C93A /* src */,
 				22ACDB47146E9AF60021C93A /* libraries */,
 				22ACDB88146E9B170021C93A /* arduino */,
+				2233DE6A1471C21D00FEF4A0 /* config */,
 			);
 			name = "¬´PROJECTNAME¬ª";
+			sourceTree = "<group>";
+		};
+		2233DE6A1471C21D00FEF4A0 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				2233DE6B1471C21D00FEF4A0 /* Duemilanove.xcconfig */,
+				2233DE6C1471C21D00FEF4A0 /* NG.xcconfig */,
+				2233DE6D1471C21D00FEF4A0 /* UNO.xcconfig */,
+			);
+			path = config;
 			sourceTree = "<group>";
 		};
 		22ACDB41146E9ACD0021C93A /* src */ = {
@@ -363,7 +377,7 @@
 /* Begin PBXLegacyTarget section */
 		01706F540A347F6900E43B08 /* Make */ = {
 			isa = PBXLegacyTarget;
-			buildArgumentsString = "$(ACTION)";
+			buildArgumentsString = "$(ACTION) BOARD=\"$(BOARD)\" MCU=\"$(MCU)\" F_CPU=\"$(F_CPU)\" ";
 			buildConfigurationList = 01706F550A347F8800E43B08 /* Build configuration list for PBXLegacyTarget "Make" */;
 			buildPhases = (
 			);
@@ -416,6 +430,7 @@
 /* Begin XCBuildConfiguration section */
 		01706F360A34762900E43B08 /* Development */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2233DE6D1471C21D00FEF4A0 /* UNO.xcconfig */;
 			buildSettings = {
 			};
 			name = Development;

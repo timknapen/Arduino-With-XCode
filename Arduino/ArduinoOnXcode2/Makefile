@@ -1,49 +1,32 @@
 
-
-# Arduino UNO
-MCU = atmega328p
-F_CPU = 16000000
-FORMAT = ihex
-UPLOAD_RATE = 115200
-PORT = /dev/tty.usbmodem* 
-
-# Arduino Duemillanove with ATmega328
-# MCU = atmega328p
-# F_CPU = 16000000
-# FORMAT = ihex
-# UPLOAD_RATE = 57600
-# PORT = /dev/tty.usbserial*
-
-
-# Arduino NG with ATMEGA8
-# MCU = atmega8
-# F_CPU = 16000000
-# FORMAT = ihex
-# UPLOAD_RATE = 19200
-# PORT = /dev/tty.usbserial*
-
-
 ARDUINO = /Applications/Arduino.app/Contents/Resources/Java/hardware/arduino/cores/arduino
-LIBRARIES = /Applications/Arduino.app/Contents/Resources/Java/libraries
-AVRDUDE_DIR = /usr/local/CrossPack-AVR/bin
+LIB_ROOT = /Applications/Arduino.app/Contents/Resources/Java/libraries
+#AVRDUDE_DIR = /usr/local/CrossPack-AVR/bin # Crosspack version
+AVRDUDE_DIR = /Applications/Arduino.app/Contents/Resources/Java/hardware/tools/avr/bin/
+AVRDUDE_CONF= /Applications/Arduino.app/Contents/Resources/Java/hardware/tools/avr/etc/avrdude.conf
 SIZE = $(AVRDUDE_DIR)/avr-size
 SOURCES = $(wildcard src/*.cpp)
 
-#loading libraries - adjust to your needs
-STEPPER = $(LIBRARIES)/Stepper
-SERVO = $(LIBRARIES)/Servo
-EEPROM = $(LIBRARIES)/EEPROM
-INCLUDE_LIBRARIES = -I$(STEPPER) -I$(SERVO) -I$(EEPROM)
-CPP_LIBRARIES = $(wildcard $(STEPPER)/*.cpp) $(wildcard $(SERVO)/*.cpp) \
-$(wildcard $(EEPROM)/*.cpp) 
+# loading libraries
+LIBRARIES	= EEPROM Ethernet/utility SPI \
+Firmata LiquidCrystal Matrix Sprite \
+SD SD/utility Servo SoftwareSerial \
+Stepper Wire Wire/utility
 
+# make the correct paths for the libraries
+INCLUDE_LIBRARIES = $(addprefix -I$(LIB_ROOT)/,$(LIBRARIES))
+
+# find .cpp files in libraries
+CPP_LIBRARIES = $(foreach lib,$(LIBRARIES),$(wildcard $(LIB_ROOT)/$(lib)/*.cpp)) 
+
+# main file
 TARGET = main
-SRC = $(ARDUINO)/pins_arduino.c $(ARDUINO)/wiring.c \
-$(ARDUINO)/wiring_analog.c $(ARDUINO)/wiring_digital.c \
-$(ARDUINO)/wiring_pulse.c \
-$(ARDUINO)/wiring_shift.c $(ARDUINO)/WInterrupts.c 
-CXXSRC = $(ARDUINO)/HardwareSerial.cpp $(ARDUINO)/WMath.cpp $(ARDUINO)/Print.cpp \
-$(CPP_LIBRARIES) $(SOURCES)
+
+# find .c files in arduino directory
+SRC = $(wildcard $(ARDUINO)/*.c)
+
+# .cpp files from libraries and arduino directory
+CXXSRC = $(wildcard $(ARDUINO)/*.cpp) $(CPP_LIBRARIES) $(SOURCES)
 
 
 # Name of this Makefile (used for "make depend").
@@ -113,8 +96,12 @@ ALL_ASFLAGS = -mmcu=$(MCU) -I. -x assembler-with-cpp $(ASFLAGS)
 
 # Default target.
 all: sizebefore clean build  sizeafter
+	@echo "action = all";
 
-build: info	folder elf hex
+
+build: folder elf hex
+	@echo "action = build";
+
 		
 
 elf: bin/$(TARGET).elf
@@ -125,22 +112,25 @@ sym: bin/$(TARGET).sym
 
 # print info
 info:
-	@echo "compiling sources: " $(SOURCES);
-	@echo "compiling libraries sources: " $(CPP_LIBRARIES);
 	@echo "----------";
-
+	@echo "Using board: " $(BOARD);
+	@echo "compiling sources: " $(CXXSRC);
+	@echo "compiling libraries sources: " $(CPP_LIBRARIES);
+	@echo "included libraries: " $(INCLUDE_LIBRARIES);
+	@echo "----------";
+	
 # create the bin folder if it doesn't exist
 folder:
 	mkdir -p bin
 
 # Program the device.  
 upload: bin/$(TARGET).hex
-	$(AVRDUDE) $(AVRDUDE_FLAGS) $(AVRDUDE_WRITE_FLASH)
-
+	$(AVRDUDE) -C$(AVRDUDE_CONF) $(AVRDUDE_FLAGS) $(AVRDUDE_WRITE_FLASH)
 
 # Display size of file.
 HEXSIZE = $(SIZE) --target=$(FORMAT) bin/$(TARGET).hex
 ELFSIZE = $(SIZE)  bin/$(TARGET).elf
+
 sizebefore:
 	@echo "size before: ";
 	@if [ -f bin/$(TARGET).elf ]; then echo; echo $(MSG_SIZE_BEFORE); $(HEXSIZE); echo; fi
@@ -229,4 +219,4 @@ depend:
 		>> $(MAKEFILE); \
 	$(CC) -M -mmcu=$(MCU) $(CDEFS) $(CINCS) $(SRC) $(ASRC) >> $(MAKEFILE)
 
-.PHONY:	all build elf hex eep lss sym program coff extcoff clean depend
+.PHONY:	all build elf hex eep lss sym program coff extcoff clean depend info sizeafter sizebefore folder
