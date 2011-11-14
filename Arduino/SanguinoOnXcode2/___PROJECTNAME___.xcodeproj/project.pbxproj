@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 42;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXFileReference section */
@@ -90,11 +90,11 @@
 		222FAA84146B622C00825729 /* twi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = twi.h; path = /Applications/Arduino.app/Contents/Resources/Java/libraries/Wire/utility/twi.h; sourceTree = "<absolute>"; };
 		222FAA85146B622C00825729 /* Wire.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Wire.cpp; path = /Applications/Arduino.app/Contents/Resources/Java/libraries/Wire/Wire.cpp; sourceTree = "<absolute>"; };
 		222FAA86146B622C00825729 /* Wire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Wire.h; path = /Applications/Arduino.app/Contents/Resources/Java/libraries/Wire/Wire.h; sourceTree = "<absolute>"; };
-		22ACDAFE146E99DE0021C93A /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = "Library/Xcode/Project Templates/Arduino/SanguinoOnXcode2/src/main.cpp"; sourceTree = SYSTEM_DEVELOPER_DIR; };
-		22ACDAFF146E99DE0021C93A /* ArduinoProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArduinoProgram.h; path = "Library/Xcode/Project Templates/Arduino/SanguinoOnXcode2/src/ArduinoProgram.h"; sourceTree = SYSTEM_DEVELOPER_DIR; };
-		22ACDB00146E99DE0021C93A /* ArduinoProgram.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ArduinoProgram.cpp; path = "Library/Xcode/Project Templates/Arduino/SanguinoOnXcode2/src/ArduinoProgram.cpp"; sourceTree = SYSTEM_DEVELOPER_DIR; };
-		22ACDB01146E99DE0021C93A /* TestThing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestThing.h; path = "Library/Xcode/Project Templates/Arduino/SanguinoOnXcode2/src/TestThing.h"; sourceTree = SYSTEM_DEVELOPER_DIR; };
-		22ACDB02146E99DE0021C93A /* TestThing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TestThing.cpp; path = "Library/Xcode/Project Templates/Arduino/SanguinoOnXcode2/src/TestThing.cpp"; sourceTree = SYSTEM_DEVELOPER_DIR; };
+		22ACDAFE146E99DE0021C93A /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = "Library/Xcode/Project Templates/Arduino/SanguinoOnXcode2/src/main.cpp"; sourceTree = DEVELOPER_DIR; };
+		22ACDAFF146E99DE0021C93A /* ArduinoProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArduinoProgram.h; path = "Library/Xcode/Project Templates/Arduino/SanguinoOnXcode2/src/ArduinoProgram.h"; sourceTree = DEVELOPER_DIR; };
+		22ACDB00146E99DE0021C93A /* ArduinoProgram.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ArduinoProgram.cpp; path = "Library/Xcode/Project Templates/Arduino/SanguinoOnXcode2/src/ArduinoProgram.cpp"; sourceTree = DEVELOPER_DIR; };
+		22ACDB01146E99DE0021C93A /* TestThing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestThing.h; path = "Library/Xcode/Project Templates/Arduino/SanguinoOnXcode2/src/TestThing.h"; sourceTree = DEVELOPER_DIR; };
+		22ACDB02146E99DE0021C93A /* TestThing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TestThing.cpp; path = "Library/Xcode/Project Templates/Arduino/SanguinoOnXcode2/src/TestThing.cpp"; sourceTree = DEVELOPER_DIR; };
 		22ACDB04146E9A0E0021C93A /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -355,7 +355,7 @@
 			);
 			name = src;
 			path = "Library/Xcode/Project Templates/Arduino/SanguinoOnXcode2/src";
-			sourceTree = SYSTEM_DEVELOPER_DIR;
+			sourceTree = DEVELOPER_DIR;
 		};
 /* End PBXGroup section */
 
@@ -393,7 +393,7 @@
 		08FB7793FE84155DC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			buildConfigurationList = 01706F350A34762900E43B08 /* Build configuration list for PBXProject "___PROJECTNAME___" */;
-			compatibilityVersion = "Xcode 2.4";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (

@@ -275,7 +275,6 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -297,7 +296,7 @@
 							<real>185</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>537 59 997 719 0 0 1280 778 </string>
+						<string>283 59 997 719 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -325,11 +324,11 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>22F5F69E146EA68C004F0E2E</string>
+										<string>221448F614713CB800016B13</string>
 										<key>history</key>
 										<array>
 											<string>22F5F69C146EA68C004F0E2E</string>
-											<string>22F5F69D146EA68C004F0E2E</string>
+											<string>22F5F69E146EA68C004F0E2E</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -343,18 +342,18 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {790, 518}}</string>
+								<string>{{0, 0}, {790, 513}}</string>
 								<key>RubberWindowFrame</key>
-								<string>537 59 997 719 0 0 1280 778 </string>
+								<string>283 59 997 719 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>518pt</string>
+							<string>513pt</string>
 						</dict>
 						<dict>
 							<key>Proportion</key>
-							<string>155pt</string>
+							<string>160pt</string>
 							<key>Tabs</key>
 							<array>
 								<dict>
@@ -368,9 +367,9 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {790, 128}}</string>
+										<string>{{10, 27}, {790, 133}}</string>
 										<key>RubberWindowFrame</key>
-										<string>537 59 997 719 0 0 1280 778 </string>
+										<string>283 59 997 719 0 0 1280 778 </string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -452,11 +451,11 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>22F5F698146EA681004F0E2E</string>
+				<string>221448F714713CB800016B13</string>
 				<string>1CA23ED40692098700951B8B</string>
-				<string>22F5F699146EA681004F0E2E</string>
+				<string>221448F814713CB800016B13</string>
 				<string>22ACDB1F146E9A590021C93A</string>
-				<string>22F5F69A146EA681004F0E2E</string>
+				<string>221448F914713CB800016B13</string>
 				<string>1CA23EDF0692099D00951B8B</string>
 				<string>1CA23EE00692099D00951B8B</string>
 				<string>1CA23EE10692099D00951B8B</string>
@@ -629,7 +628,7 @@
 		<string>/Developer/Library/Xcode/Project Templates/Arduino/ArduinoOnXcode2/___PROJECTNAME___.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>537 59 997 719 0 0 1280 778 </string>
+	<string>283 59 997 719 0 0 1280 778 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>

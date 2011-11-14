@@ -272,12 +272,10 @@
 							<array>
 								<string>08FB7794FE84155DC02AAC07</string>
 								<string>22ACDAFD146E99DE0021C93A</string>
-								<string>222FA97B146AF88600825729</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>9</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -327,7 +325,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>22ACDBB1146E9BF60021C93A</string>
+										<string>2214490114713CCF00016B13</string>
 										<key>history</key>
 										<array>
 											<string>222FAA9B146B652F00825729</string>
@@ -341,7 +339,7 @@
 											<string>222FAACE146B670300825729</string>
 											<string>222FAACF146B670300825729</string>
 											<string>22ACDBB0146E9BF60021C93A</string>
-											<string>22ACDB05146E9A110021C93A</string>
+											<string>22ACDBB1146E9BF60021C93A</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -355,18 +353,18 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {357, 372}}</string>
+								<string>{{0, 0}, {357, 363}}</string>
 								<key>RubberWindowFrame</key>
 								<string>26 81 564 697 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>372pt</string>
+							<string>363pt</string>
 						</dict>
 						<dict>
 							<key>Proportion</key>
-							<string>279pt</string>
+							<string>288pt</string>
 							<key>Tabs</key>
 							<array>
 								<dict>
@@ -380,7 +378,7 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {357, 252}}</string>
+										<string>{{10, 27}, {357, 261}}</string>
 										<key>RubberWindowFrame</key>
 										<string>26 81 564 697 0 0 1280 778 </string>
 									</dict>
@@ -464,11 +462,11 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>22ACDBB2146E9BF60021C93A</string>
+				<string>2214490214713CCF00016B13</string>
 				<string>1CA23ED40692098700951B8B</string>
-				<string>22ACDBB3146E9BF60021C93A</string>
+				<string>2214490314713CCF00016B13</string>
 				<string>222FA832146AF20700825729</string>
-				<string>22ACDBB4146E9BF60021C93A</string>
+				<string>2214490414713CCF00016B13</string>
 				<string>1CA23EDF0692099D00951B8B</string>
 				<string>1CA23EE00692099D00951B8B</string>
 				<string>1CA23EE10692099D00951B8B</string>
