@@ -5,6 +5,9 @@ Based on Robert Carlsen's and other people's efforts.
 The original manual by Robert Carlsen is here:
 http://robertcarlsen.net/2009/02/28/using-arduino-in-xcode-532
 
+I started again on this after reading and following this great tutorial:
+http://www.quietless.com/kitchen/setting-up-xcode-to-compile-upload-to-an-arduino-atmega328-duemilanove/
+
 This has been tested with XCode3.2.6 and Arduino 0022 on OSX10.6.8
 with Sanguino, Arduino NG (atmega8) and Arduino UNO
 
