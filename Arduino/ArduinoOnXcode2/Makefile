@@ -1,5 +1,4 @@
 
-
 # Arduino UNO
 MCU = atmega328p
 F_CPU = 16000000
@@ -25,7 +24,8 @@ PORT = /dev/tty.usbmodem*
 
 ARDUINO = /Applications/Arduino.app/Contents/Resources/Java/hardware/arduino/cores/arduino
 LIBRARIES = /Applications/Arduino.app/Contents/Resources/Java/libraries
-AVRDUDE_DIR = /usr/local/CrossPack-AVR/bin
+AVRDUDE_DIR = /Applications/Arduino.app/Contents/Resources/Java/hardware/tools/avr/bin/
+
 SIZE = $(AVRDUDE_DIR)/avr-size
 SOURCES = $(wildcard src/*.cpp)
 
