@@ -6,7 +6,7 @@ The original manual by Robert Carlsen is here:
 http://robertcarlsen.net/2009/02/28/using-arduino-in-xcode-532
 
 This has been tested with XCode3.2.6 and Arduino 0022 on OSX10.6.8
-with Sanguino and Arduino NG (atmega8)
+with Sanguino, Arduino NG (atmega8) and Arduino UNO
 
 Installing the templates:
 Copy the folder Arduino to your XCode project templates folder.

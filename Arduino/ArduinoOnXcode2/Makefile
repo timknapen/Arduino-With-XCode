@@ -1,10 +1,18 @@
 
 
-# Arduino Duemillanove with ATmega328
+# Arduino UNO
 MCU = atmega328p
 F_CPU = 16000000
 FORMAT = ihex
-UPLOAD_RATE = 57600
+UPLOAD_RATE = 115200
+PORT = /dev/tty.usbmodem* 
+
+# Arduino Duemillanove with ATmega328
+# MCU = atmega328p
+# F_CPU = 16000000
+# FORMAT = ihex
+# UPLOAD_RATE = 57600
+# PORT = /dev/tty.usbserial*
 
 
 # Arduino NG with ATMEGA8
@@ -12,6 +20,8 @@ UPLOAD_RATE = 57600
 # F_CPU = 16000000
 # FORMAT = ihex
 # UPLOAD_RATE = 19200
+# PORT = /dev/tty.usbserial*
+
 
 ARDUINO = /Applications/Arduino.app/Contents/Resources/Java/hardware/arduino/cores/arduino
 LIBRARIES = /Applications/Arduino.app/Contents/Resources/Java/libraries
@@ -27,7 +37,6 @@ INCLUDE_LIBRARIES = -I$(STEPPER) -I$(SERVO) -I$(EEPROM)
 CPP_LIBRARIES = $(wildcard $(STEPPER)/*.cpp) $(wildcard $(SERVO)/*.cpp) \
 $(wildcard $(EEPROM)/*.cpp) 
 
-PORT = /dev/tty.usbserial*
 TARGET = main
 SRC = $(ARDUINO)/pins_arduino.c $(ARDUINO)/wiring.c \
 $(ARDUINO)/wiring_analog.c $(ARDUINO)/wiring_digital.c \
