@@ -1,0 +1,5 @@
+// Arduino Diecimila, Duemilanove or Nano with ATmega168
+// Arduino Duemillanove
+#include "Diecimila168.xcconfig"
+
+BOARD = Arduino_Duemilanove_168

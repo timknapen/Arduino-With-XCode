@@ -233,8 +233,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -259,7 +257,7 @@
 						<dict>
 							<key>PBXSmartGroupTreeModuleColumnWidthsKey</key>
 							<array>
-								<real>185</real>
+								<real>289</real>
 							</array>
 							<key>PBXSmartGroupTreeModuleColumnsKey_v4</key>
 							<array>
@@ -280,7 +278,7 @@
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {185, 660}}</string>
+							<string>{{0, 0}, {289, 660}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -290,30 +288,32 @@
 					<key>GeometryConfiguration</key>
 					<dict>
 						<key>Frame</key>
-						<string>{{0, 0}, {202, 678}}</string>
+						<string>{{0, 0}, {306, 678}}</string>
 						<key>GroupTreeTableConfiguration</key>
 						<array>
 							<string>MainColumn</string>
-							<real>185</real>
+							<real>289</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>283 59 997 719 0 0 1280 778 </string>
+						<string>34 59 1072 719 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
 					<key>Proportion</key>
-					<string>202pt</string>
+					<string>306pt</string>
 				</dict>
 				<dict>
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>22ACDB1F146E9A590021C93A</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>Makefile</string>
+								<string>Nano.xcconfig</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -321,15 +321,28 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>22ACDB20146E9A590021C93A</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>Makefile</string>
+										<string>Nano.xcconfig</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>2233DE941471C2B400FEF4A0</string>
+										<string>22D3B38A1472AF0D0081CA45</string>
 										<key>history</key>
 										<array>
-											<string>2233DE6E1471C22E00FEF4A0</string>
-											<string>2233DE6F1471C22E00FEF4A0</string>
+											<string>22D3B35C1472AC8A0081CA45</string>
+											<string>22D3B35F1472ACA40081CA45</string>
+											<string>22D3B36A1472ACFF0081CA45</string>
+											<string>22D3B36C1472ACFF0081CA45</string>
+											<string>22D3B36E1472AD190081CA45</string>
+											<string>22D3B3711472AD350081CA45</string>
+											<string>22D3B3751472ADAC0081CA45</string>
+											<string>22D3B3761472ADAC0081CA45</string>
+											<string>22D3B37D1472AE5A0081CA45</string>
+											<string>22D3B37F1472AE5A0081CA45</string>
+											<string>22D3B3801472AE5A0081CA45</string>
+											<string>22D3B3811472AE5A0081CA45</string>
+											<string>22D3B3871472AEB00081CA45</string>
+											<string>22D3B3881472AEB00081CA45</string>
+											<string>22D3B3601472ACA40081CA45</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -343,18 +356,18 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {790, 503}}</string>
+								<string>{{0, 0}, {761, 498}}</string>
 								<key>RubberWindowFrame</key>
-								<string>283 59 997 719 0 0 1280 778 </string>
+								<string>34 59 1072 719 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>503pt</string>
+							<string>498pt</string>
 						</dict>
 						<dict>
 							<key>Proportion</key>
-							<string>170pt</string>
+							<string>175pt</string>
 							<key>Tabs</key>
 							<array>
 								<dict>
@@ -368,9 +381,9 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {790, 143}}</string>
+										<string>{{10, 27}, {761, 148}}</string>
 										<key>RubberWindowFrame</key>
-										<string>283 59 997 719 0 0 1280 778 </string>
+										<string>34 59 1072 719 0 0 1280 778 </string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -433,7 +446,7 @@
 						</dict>
 					</array>
 					<key>Proportion</key>
-					<string>790pt</string>
+					<string>761pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -452,11 +465,11 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>2233DE951471C2B400FEF4A0</string>
+				<string>22D3B3111472A5DA0081CA45</string>
 				<string>1CA23ED40692098700951B8B</string>
-				<string>2233DE961471C2B400FEF4A0</string>
+				<string>22D3B3121472A5DA0081CA45</string>
 				<string>22ACDB1F146E9A590021C93A</string>
-				<string>2233DE971471C2B400FEF4A0</string>
+				<string>22D3B3131472A5DA0081CA45</string>
 				<string>1CA23EDF0692099D00951B8B</string>
 				<string>1CA23EE00692099D00951B8B</string>
 				<string>1CA23EE10692099D00951B8B</string>
@@ -629,7 +642,7 @@
 		<string>/Developer/Library/Xcode/Project Templates/Arduino/ArduinoOnXcode2/___PROJECTNAME___.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>283 59 997 719 0 0 1280 778 </string>
+	<string>34 59 1072 719 0 0 1280 778 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>

@@ -2,6 +2,7 @@
 
 // Arduino UNO
 BOARD = Arduino_UNO
+DESCRIPTION = Arduino UNO
 MCU = atmega328p
 F_CPU = 16000000
 FORMAT = ihex
