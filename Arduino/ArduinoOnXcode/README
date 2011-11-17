@@ -1,0 +1,44 @@
+
+### This is the Arduino on XCode3.2 help file ###
+
+	The preferred place for help, discussion and suggestions is here:
+	http://arduino.cc/forum/index.php/topic,49956.0.html
+
+
+###	Quickstart
+
+	To build the project press "Build"
+	To clean the project press "Clean"
+	To build and upload the project press "Clean All"
+
+
+###	LIBRARIES
+	
+	All the standard libraries included in Arduino.app are already included in the makefile. 
+	You just need to #include them like you normally would.
+
+
+###	To add another library:
+
+1.	Drag the folder containing the library's .cpp and .h file onto XCode's project tree.
+	A dialog pops up asking you about the way you want to add this folder.
+	Uncheck "Copy items into destinations group's folder (if needed)".
+	Choose "Absolute Path" as the Reference Type
+	Click "Add"
+
+2.	Right click the new folder in the Xcode project tree and choose "Get Info"
+	Copy the Full Path.
+	
+3.  Go to Project > Edit Project Settings and click on the "Build" tab.
+	In the "value" field for "LIBRARY_PATHS", paste the Full path you just copied.
+	LIBRARY_PATHS is a space separated list. At the moment the paths in this list can't contain spaces.
+	Don't try to add quotes around those paths, it won't work... Make has horrible problems with paths that contain spaces :-(
+	(see here for more about that nonsense: http://www.cmcrossroads.com/ask-mr-make/7859-gnu-make-meets-file-names-with-spaces-in-them )
+	Are also not allowed: paths that have ~/yourFolder instead of /Users/myUserName/yourFolder
+	Paths should NOT end with a slash.
+
+
+### FEEDBACK
+	Is this not clear enough? Should we include something else? Can you help us make this project better?
+	Let us know at the Arduino Forum! 
+	http://arduino.cc/forum/index.php/topic,49956.0.html

@@ -1,8 +1,9 @@
 
-// Arduino BT with ATmega168
 
-BOARD = Arduinot_BT_168
-DESCRIPTION = Arduino BT with ATmega168
+// Arduino Mini
+
+BOARD = Arduino_Mini
+DESCRIPTION = Arduino Mini
 MCU = atmega168
 F_CPU = 16000000	
 FORMAT = ihex

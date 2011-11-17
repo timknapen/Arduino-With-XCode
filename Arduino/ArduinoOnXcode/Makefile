@@ -8,16 +8,18 @@ SIZE = $(AVRDUDE_DIR)/avr-size
 SOURCES = $(wildcard src/*.cpp)
 
 # loading libraries
-LIBRARIES	= EEPROM Ethernet/utility SPI \
+LIBRARIES = EEPROM Ethernet/utility SPI \
 Firmata LiquidCrystal Matrix Sprite \
 SD SD/utility Servo SoftwareSerial \
 Stepper Wire Wire/utility
 
 # make the correct paths for the libraries
-INCLUDE_LIBRARIES = $(addprefix -I$(LIB_ROOT)/,$(LIBRARIES))
+INCLUDE_LIBRARIES = $(addprefix -I$(LIB_ROOT)/,$(LIBRARIES)) \
+$(addprefix -I, $(LIBRARY_PATHS))
 
 # find .cpp files in libraries
-CPP_LIBRARIES = $(foreach lib,$(LIBRARIES),$(wildcard $(LIB_ROOT)/$(lib)/*.cpp)) 
+CPP_LIBRARIES = $(foreach lib,$(LIBRARIES),$(wildcard $(LIB_ROOT)/$(lib)/*.cpp))
+CPP_LIBRARIES += $(foreach item, $(LIBRARY_PATHS), $(wildcard $(item)/*.cpp))
 
 # main file
 TARGET = main
@@ -26,7 +28,7 @@ TARGET = main
 SRC = $(wildcard $(ARDUINO)/*.c)
 
 # .cpp files from libraries and arduino directory
-CXXSRC = $(wildcard $(ARDUINO)/*.cpp) $(CPP_LIBRARIES) $(SOURCES)
+CXXSRC = $(SOURCES) $(wildcard $(ARDUINO)/*.cpp) $(CPP_LIBRARIES) 
 
 
 # Name of this Makefile (used for "make depend").
@@ -95,11 +97,11 @@ ALL_ASFLAGS = -mmcu=$(MCU) -I. -x assembler-with-cpp $(ASFLAGS)
 
 
 # Default target.
-all: sizebefore clean build  sizeafter
+all: clean build sizeafter
 	@echo "action = all";
 
 
-build: folder elf hex
+build: info folder elf hex
 	@echo "action = build";
 
 		
@@ -110,14 +112,17 @@ eep: bin/$(TARGET).eep
 lss: bin/$(TARGET).lss 
 sym: bin/$(TARGET).sym
 
+
 # print info
 info:
-	@echo "----------";
+	@echo "------------------------ some info for debugging ------------------";
 	@echo "Using board: " $(BOARD);
-	@echo "compiling sources: " $(CXXSRC);
-	@echo "compiling libraries sources: " $(CPP_LIBRARIES);
-	@echo "included libraries: " $(INCLUDE_LIBRARIES);
-	@echo "----------";
+	@echo "Library paths: " $(addprefix -I, $(LIBRARY_PATHS));
+	@echo "Library cpp files: " $(foreach item,$(LIBRARY_PATHS), $(wildcard $(item)/*.cpp));
+	@echo "Compiling sources: " $(CXXSRC);
+	@echo "Compiling libraries sources: " $(CPP_LIBRARIES);
+	@echo "Included libraries: " $(INCLUDE_LIBRARIES);
+	@echo "------------------------ end of debugging info --------------------";
 	
 # create the bin folder if it doesn't exist
 folder:

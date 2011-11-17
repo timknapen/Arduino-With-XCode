@@ -1,6 +1,8 @@
 
+
 // Arduino NG
 BOARD = Arduino_NG
+DESCRIPTION = Arduino NG or older w/ ATmega8
 MCU = atmega8
 F_CPU = 16000000
 FORMAT = ihex

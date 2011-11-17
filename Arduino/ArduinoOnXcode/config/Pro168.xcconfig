@@ -1,5 +1,7 @@
 
+
 // Arduino Pro or Pro Mini (5V, 16 MHz) w/ ATmega168
+
 BOARD = Arduinot_PRO_168
 DESCRIPTION = Arduino Pro or Pro Mini (5V, 16 MHz) w/ ATmega168
 MCU = atmega168

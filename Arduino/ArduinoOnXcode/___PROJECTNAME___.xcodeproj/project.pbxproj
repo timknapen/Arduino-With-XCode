@@ -7,9 +7,21 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		2233DE6B1471C21D00FEF4A0 /* Duemilanove328.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Duemilanove328.xcconfig; sourceTree = "<group>"; };
-		2233DE6C1471C21D00FEF4A0 /* NG8.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = NG8.xcconfig; sourceTree = "<group>"; };
-		2233DE6D1471C21D00FEF4A0 /* UNO.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = UNO.xcconfig; sourceTree = "<group>"; };
+		2294D52614753759008E1C04 /* BT168.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = BT168.xcconfig; sourceTree = "<group>"; };
+		2294D52714753759008E1C04 /* BT328.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = BT328.xcconfig; sourceTree = "<group>"; };
+		2294D52814753759008E1C04 /* Diecimila168.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Diecimila168.xcconfig; sourceTree = "<group>"; };
+		2294D52914753759008E1C04 /* Duemilanove168.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Duemilanove168.xcconfig; sourceTree = "<group>"; };
+		2294D52A14753759008E1C04 /* Duemilanove328.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Duemilanove328.xcconfig; sourceTree = "<group>"; };
+		2294D52B14753759008E1C04 /* mega1280.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = mega1280.xcconfig; sourceTree = "<group>"; };
+		2294D52C14753759008E1C04 /* Mega2560.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Mega2560.xcconfig; sourceTree = "<group>"; };
+		2294D52D14753759008E1C04 /* mini.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = mini.xcconfig; sourceTree = "<group>"; };
+		2294D52E14753759008E1C04 /* Nano.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Nano.xcconfig; sourceTree = "<group>"; };
+		2294D52F14753759008E1C04 /* Nano168.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Nano168.xcconfig; sourceTree = "<group>"; };
+		2294D53014753759008E1C04 /* NG8.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = NG8.xcconfig; sourceTree = "<group>"; };
+		2294D53114753759008E1C04 /* NG168.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = NG168.xcconfig; sourceTree = "<group>"; };
+		2294D53214753759008E1C04 /* Pro168.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Pro168.xcconfig; sourceTree = "<group>"; };
+		2294D53314753759008E1C04 /* Pro328.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Pro328.xcconfig; sourceTree = "<group>"; };
+		2294D53514753759008E1C04 /* UNO.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = UNO.xcconfig; sourceTree = "<group>"; };
 		22ACDB40146E9AC60021C93A /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		22ACDB42146E9ACD0021C93A /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		22ACDB43146E9ACD0021C93A /* ArduinoProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArduinoProgram.h; sourceTree = "<group>"; };
@@ -99,18 +111,6 @@
 		22ACDBA8146E9B170021C93A /* WProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WProgram.h; path = /Applications/Arduino.app/Contents/Resources/Java/hardware/arduino/cores/arduino/WProgram.h; sourceTree = "<absolute>"; };
 		22ACDBA9146E9B170021C93A /* WString.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WString.cpp; path = /Applications/Arduino.app/Contents/Resources/Java/hardware/arduino/cores/arduino/WString.cpp; sourceTree = "<absolute>"; };
 		22ACDBAA146E9B170021C93A /* WString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WString.h; path = /Applications/Arduino.app/Contents/Resources/Java/hardware/arduino/cores/arduino/WString.h; sourceTree = "<absolute>"; };
-		22D3B3151472A6870081CA45 /* Nano328.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Nano328.xcconfig; path = "Library/Xcode/Project Templates/Arduino/ArduinoOnXcode2/config/Nano.xcconfig"; sourceTree = DEVELOPER_DIR; };
-		22D3B3231472A7710081CA45 /* Diecimila168.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Diecimila168.xcconfig; path = "Library/Xcode/Project Templates/Arduino/ArduinoOnXcode2/config/Diecimila168.xcconfig"; sourceTree = DEVELOPER_DIR; };
-		22D3B3241472A7FD0081CA45 /* Duemilanove168.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Duemilanove168.xcconfig; path = "Library/Xcode/Project Templates/Arduino/ArduinoOnXcode2/config/Duemilanove168.xcconfig"; sourceTree = DEVELOPER_DIR; };
-		22D3B32D1472A85E0081CA45 /* Nano168.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Nano168.xcconfig; path = "Library/Xcode/Project Templates/Arduino/ArduinoOnXcode2/config/Nano168.xcconfig"; sourceTree = DEVELOPER_DIR; };
-		22D3B32E1472A88B0081CA45 /* Mega2560.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Mega2560.xcconfig; path = "Library/Xcode/Project Templates/Arduino/ArduinoOnXcode2/config/Mega2560.xcconfig"; sourceTree = DEVELOPER_DIR; };
-		22D3B32F1472A8EB0081CA45 /* mega1280.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = mega1280.xcconfig; path = "Library/Xcode/Project Templates/Arduino/ArduinoOnXcode2/config/mega1280.xcconfig"; sourceTree = DEVELOPER_DIR; };
-		22D3B3301472A9980081CA45 /* mini.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = mini.xcconfig; path = "Library/Xcode/Project Templates/Arduino/ArduinoOnXcode2/config/mini.xcconfig"; sourceTree = DEVELOPER_DIR; };
-		22D3B3351472AA5E0081CA45 /* BT328.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = BT328.xcconfig; path = "Library/Xcode/Project Templates/Arduino/ArduinoOnXcode2/config/BT328.xcconfig"; sourceTree = DEVELOPER_DIR; };
-		22D3B3551472ABAE0081CA45 /* BT168.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = BT168.xcconfig; path = "Library/Xcode/Project Templates/Arduino/ArduinoOnXcode2/config/BT168.xcconfig"; sourceTree = DEVELOPER_DIR; };
-		22D3B3561472AC0E0081CA45 /* Pro328.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Pro328.xcconfig; path = "Library/Xcode/Project Templates/Arduino/ArduinoOnXcode2/config/Pro328.xcconfig"; sourceTree = DEVELOPER_DIR; };
-		22D3B3741472AD570081CA45 /* Pro168.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Pro168.xcconfig; path = "Library/Xcode/Project Templates/Arduino/ArduinoOnXcode2/config/Pro168.xcconfig"; sourceTree = DEVELOPER_DIR; };
-		22D3B37A1472ADF20081CA45 /* NG168.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = NG168.xcconfig; path = "Library/Xcode/Project Templates/Arduino/ArduinoOnXcode2/config/NG168.xcconfig"; sourceTree = DEVELOPER_DIR; };
 		22F5F69B146EA68B004F0E2E /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,21 +131,21 @@
 		2233DE6A1471C21D00FEF4A0 /* config */ = {
 			isa = PBXGroup;
 			children = (
-				2233DE6D1471C21D00FEF4A0 /* UNO.xcconfig */,
-				2233DE6B1471C21D00FEF4A0 /* Duemilanove328.xcconfig */,
-				22D3B3151472A6870081CA45 /* Nano328.xcconfig */,
-				22D3B3231472A7710081CA45 /* Diecimila168.xcconfig */,
-				2233DE6C1471C21D00FEF4A0 /* NG8.xcconfig */,
-				22D3B3241472A7FD0081CA45 /* Duemilanove168.xcconfig */,
-				22D3B32D1472A85E0081CA45 /* Nano168.xcconfig */,
-				22D3B32E1472A88B0081CA45 /* Mega2560.xcconfig */,
-				22D3B32F1472A8EB0081CA45 /* mega1280.xcconfig */,
-				22D3B3301472A9980081CA45 /* mini.xcconfig */,
-				22D3B3351472AA5E0081CA45 /* BT328.xcconfig */,
-				22D3B3551472ABAE0081CA45 /* BT168.xcconfig */,
-				22D3B3561472AC0E0081CA45 /* Pro328.xcconfig */,
-				22D3B3741472AD570081CA45 /* Pro168.xcconfig */,
-				22D3B37A1472ADF20081CA45 /* NG168.xcconfig */,
+				2294D52614753759008E1C04 /* BT168.xcconfig */,
+				2294D52714753759008E1C04 /* BT328.xcconfig */,
+				2294D52814753759008E1C04 /* Diecimila168.xcconfig */,
+				2294D52914753759008E1C04 /* Duemilanove168.xcconfig */,
+				2294D52A14753759008E1C04 /* Duemilanove328.xcconfig */,
+				2294D52B14753759008E1C04 /* mega1280.xcconfig */,
+				2294D52C14753759008E1C04 /* Mega2560.xcconfig */,
+				2294D52D14753759008E1C04 /* mini.xcconfig */,
+				2294D52E14753759008E1C04 /* Nano.xcconfig */,
+				2294D52F14753759008E1C04 /* Nano168.xcconfig */,
+				2294D53014753759008E1C04 /* NG8.xcconfig */,
+				2294D53114753759008E1C04 /* NG168.xcconfig */,
+				2294D53214753759008E1C04 /* Pro168.xcconfig */,
+				2294D53314753759008E1C04 /* Pro328.xcconfig */,
+				2294D53514753759008E1C04 /* UNO.xcconfig */,
 			);
 			path = config;
 			sourceTree = "<group>";
@@ -401,7 +401,7 @@
 /* Begin PBXLegacyTarget section */
 		01706F540A347F6900E43B08 /* Make */ = {
 			isa = PBXLegacyTarget;
-			buildArgumentsString = "$(ACTION) BOARD=\"$(BOARD)\" MCU=\"$(MCU)\" F_CPU=\"$(F_CPU)\" ";
+			buildArgumentsString = "$(ACTION)";
 			buildConfigurationList = 01706F550A347F8800E43B08 /* Build configuration list for PBXLegacyTarget "Make" */;
 			buildPhases = (
 			);
@@ -454,19 +454,22 @@
 /* Begin XCBuildConfiguration section */
 		01706F360A34762900E43B08 /* Development */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2233DE6D1471C21D00FEF4A0 /* UNO.xcconfig */;
+			baseConfigurationReference = 2294D53514753759008E1C04 /* UNO.xcconfig */;
 			buildSettings = {
+				LIBRARY_PATHS = "";
 			};
 			name = Development;
 		};
 		01706F370A34762900E43B08 /* Deployment */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2294D53514753759008E1C04 /* UNO.xcconfig */;
 			buildSettings = {
 			};
 			name = Deployment;
 		};
 		01706F380A34762900E43B08 /* Default */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2294D53514753759008E1C04 /* UNO.xcconfig */;
 			buildSettings = {
 			};
 			name = Default;

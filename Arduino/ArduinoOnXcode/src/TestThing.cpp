@@ -3,5 +3,5 @@
 
 
 void TestThing::setup(){
-	Serial.println("test thing is setup again!");
+	Serial.println(" TestThing is setup again!");
 }
