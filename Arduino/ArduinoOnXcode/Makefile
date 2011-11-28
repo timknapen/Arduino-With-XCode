@@ -1,34 +1,25 @@
 
-ARDUINO = /Applications/Arduino.app/Contents/Resources/Java/hardware/arduino/cores/arduino
-LIB_ROOT = /Applications/Arduino.app/Contents/Resources/Java/libraries
-#AVRDUDE_DIR = /usr/local/CrossPack-AVR/bin # Crosspack version
 AVRDUDE_DIR = /Applications/Arduino.app/Contents/Resources/Java/hardware/tools/avr/bin/
 AVRDUDE_CONF= /Applications/Arduino.app/Contents/Resources/Java/hardware/tools/avr/etc/avrdude.conf
 SIZE = $(AVRDUDE_DIR)/avr-size
 SOURCES = $(wildcard src/*.cpp)
 
-# loading libraries
-LIBRARIES = EEPROM Ethernet/utility SPI \
-Firmata LiquidCrystal Matrix Sprite \
-SD SD/utility Servo SoftwareSerial \
-Stepper Wire Wire/utility
-
 # make the correct paths for the libraries
-INCLUDE_LIBRARIES = $(addprefix -I$(LIB_ROOT)/,$(LIBRARIES)) \
+INCLUDE_LIBRARIES = $(addprefix -I$(ARDUINO_LIBRARIES_PATH)/,$(ARDUINO_LIBRARIES)) \
 $(addprefix -I, $(LIBRARY_PATHS))
 
 # find .cpp files in libraries
-CPP_LIBRARIES = $(foreach lib,$(LIBRARIES),$(wildcard $(LIB_ROOT)/$(lib)/*.cpp))
+CPP_LIBRARIES = $(foreach lib,$(ARDUINO_LIBRARIES),$(wildcard $(ARDUINO_LIBRARIES_PATH)/$(lib)/*.cpp))
 CPP_LIBRARIES += $(foreach item, $(LIBRARY_PATHS), $(wildcard $(item)/*.cpp))
 
 # main file
 TARGET = main
 
 # find .c files in arduino directory
-SRC = $(wildcard $(ARDUINO)/*.c)
+SRC = $(wildcard $(ARDUINO_PATH)/*.c)
 
 # .cpp files from libraries and arduino directory
-CXXSRC = $(SOURCES) $(wildcard $(ARDUINO)/*.cpp) $(CPP_LIBRARIES) 
+CXXSRC = $(SOURCES) $(wildcard $(ARDUINO_PATH)/*.cpp) $(CPP_LIBRARIES) 
 
 
 # Name of this Makefile (used for "make depend").
@@ -46,8 +37,8 @@ CDEFS = -DF_CPU=$(F_CPU)
 CXXDEFS = -DF_CPU=$(F_CPU)
 
 # Place -I options here : include libraries
-CINCS = -I$(ARDUINO) $(INCLUDE_LIBRARIES)
-CXXINCS = -I$(ARDUINO) $(INCLUDE_LIBRARIES)
+CINCS = -I$(ARDUINO_PATH) $(INCLUDE_LIBRARIES)
+CXXINCS = -I$(ARDUINO_PATH) $(INCLUDE_LIBRARIES)
 
 # Compiler flag to set the C Standard level.
 # c89   - "ANSI" C

@@ -1,4 +1,4 @@
-
+#include "_basic_arduino_settings.xcconfig"
 
 // Arduino UNO
 BOARD = Arduino_UNO

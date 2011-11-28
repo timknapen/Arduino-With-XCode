@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXFileReference section */
+		224BEDA71483E17E00A7506B /* _basic_arduino_settings.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = _basic_arduino_settings.xcconfig; sourceTree = "<group>"; };
+		224BEDA81483E17E00A7506B /* Sanguino.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Sanguino.xcconfig; sourceTree = "<group>"; };
 		2294D52614753759008E1C04 /* BT168.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = BT168.xcconfig; sourceTree = "<group>"; };
 		2294D52714753759008E1C04 /* BT328.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = BT328.xcconfig; sourceTree = "<group>"; };
 		2294D52814753759008E1C04 /* Diecimila168.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Diecimila168.xcconfig; sourceTree = "<group>"; };
@@ -26,8 +28,6 @@
 		22ACDB42146E9ACD0021C93A /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		22ACDB43146E9ACD0021C93A /* ArduinoProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArduinoProgram.h; sourceTree = "<group>"; };
 		22ACDB44146E9ACD0021C93A /* ArduinoProgram.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ArduinoProgram.cpp; sourceTree = "<group>"; };
-		22ACDB45146E9ACD0021C93A /* TestThing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestThing.h; sourceTree = "<group>"; };
-		22ACDB46146E9ACD0021C93A /* TestThing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestThing.cpp; sourceTree = "<group>"; };
 		22ACDB49146E9AF60021C93A /* EEPROM.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EEPROM.cpp; path = /Applications/Arduino.app/Contents/Resources/Java/libraries/EEPROM/EEPROM.cpp; sourceTree = "<absolute>"; };
 		22ACDB4A146E9AF60021C93A /* EEPROM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EEPROM.h; path = /Applications/Arduino.app/Contents/Resources/Java/libraries/EEPROM/EEPROM.h; sourceTree = "<absolute>"; };
 		22ACDB4C146E9AF60021C93A /* Client.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Client.cpp; path = /Applications/Arduino.app/Contents/Resources/Java/libraries/Ethernet/Client.cpp; sourceTree = "<absolute>"; };
@@ -131,6 +131,8 @@
 		2233DE6A1471C21D00FEF4A0 /* config */ = {
 			isa = PBXGroup;
 			children = (
+				224BEDA71483E17E00A7506B /* _basic_arduino_settings.xcconfig */,
+				224BEDA81483E17E00A7506B /* Sanguino.xcconfig */,
 				2294D52614753759008E1C04 /* BT168.xcconfig */,
 				2294D52714753759008E1C04 /* BT328.xcconfig */,
 				2294D52814753759008E1C04 /* Diecimila168.xcconfig */,
@@ -156,8 +158,6 @@
 				22ACDB42146E9ACD0021C93A /* main.cpp */,
 				22ACDB43146E9ACD0021C93A /* ArduinoProgram.h */,
 				22ACDB44146E9ACD0021C93A /* ArduinoProgram.cpp */,
-				22ACDB45146E9ACD0021C93A /* TestThing.h */,
-				22ACDB46146E9ACD0021C93A /* TestThing.cpp */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -464,6 +464,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2294D53514753759008E1C04 /* UNO.xcconfig */;
 			buildSettings = {
+				LIBRARY_PATHS = "";
 			};
 			name = Deployment;
 		};
@@ -471,6 +472,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2294D53514753759008E1C04 /* UNO.xcconfig */;
 			buildSettings = {
+				LIBRARY_PATHS = "";
 			};
 			name = Default;
 		};

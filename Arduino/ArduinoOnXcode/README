@@ -1,5 +1,5 @@
 
-### This is the Arduino on XCode3.2 help file ###
+### This is the Arduino and Sanguino on XCode3.2 help file ###
 
 	The preferred place for help, discussion and suggestions is here:
 	http://arduino.cc/forum/index.php/topic,49956.0.html
@@ -9,12 +9,12 @@
 
 	To build the project press "Build"
 	To clean the project press "Clean"
-	To build and upload the project press "Clean All"
+	To upload the project press "Clean All"
 
 
 ###	LIBRARIES
 	
-	All the standard libraries included in Arduino.app are already included in the makefile. 
+	All the standard libraries included in Arduino.app are already in the build settings under "ARDUINO_LIBRARIES". 
 	You just need to #include them like you normally would.
 
 

@@ -1,4 +1,4 @@
-
+#include "_basic_arduino_settings.xcconfig"
 
 // Arduino Duemilanove or Nano w/ ATmega328
 // Arduino Duemillanove
