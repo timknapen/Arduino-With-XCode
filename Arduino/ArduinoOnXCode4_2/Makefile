@@ -1,11 +1,10 @@
 
 ARDUINO = /Applications/Arduino.app/Contents/Resources/Java/hardware/arduino/cores/arduino
 LIB_ROOT = /Applications/Arduino.app/Contents/Resources/Java/libraries
-#AVRDUDE_DIR = /usr/local/CrossPack-AVR/bin # Crosspack version
 AVRDUDE_DIR = /Applications/Arduino.app/Contents/Resources/Java/hardware/tools/avr/bin
-AVRDUDE_CONF= /Applications/Arduino.app/Contents/Resources/Java/hardware/tools/avr/etc/avrdude.conf
+AVRDUDE_CONF = /Applications/Arduino.app/Contents/Resources/Java/hardware/tools/avr/etc/avrdude.conf
 SIZE = $(AVRDUDE_DIR)/avr-size
-SOURCES = $(wildcard src/*.cpp)
+SOURCES = $(wildcard source/*.cpp)
 
 # loading libraries
 LIBRARIES = EEPROM Ethernet/utility SPI \
@@ -124,6 +123,9 @@ info:
 	@echo "Included libraries: " $(INCLUDE_LIBRARIES);
 	@echo "------------------------ end of debugging info --------------------";
 	
+#	@screen $(AVRDUDE_PORT) 19200
+
+    
 # create the bin folder if it doesn't exist
 folder:
 	mkdir -p bin
@@ -131,7 +133,7 @@ folder:
 # Program the device.  
 upload: bin/$(TARGET).hex
 	$(AVRDUDE) -C$(AVRDUDE_CONF) $(AVRDUDE_FLAGS) $(AVRDUDE_WRITE_FLASH)
-
+    
 # Display size of file.
 HEXSIZE = $(SIZE) --target=$(FORMAT) bin/$(TARGET).hex
 ELFSIZE = $(SIZE)  bin/$(TARGET).elf
@@ -144,7 +146,8 @@ sizeafter:
 	@echo "size after:";
 	@if [ -f bin/$(TARGET).elf ]; then echo; echo $(MSG_SIZE_AFTER); $(HEXSIZE); echo; fi
 
-
+console:
+	@echo screen $(AVRDUDE_PORT) 19200
 
 # Convert ELF to COFF for use in debugging / simulating in AVR Studio or VMLAB.
 COFFCONVERT=$(OBJCOPY) --debugging \
@@ -185,7 +188,7 @@ bin/core.a: $(OBJ)
 
 # Link: create ELF output file from library.
 bin/$(TARGET).elf: bin/core.a
-	$(CC) $(ALL_CFLAGS) -o $@ src/$(TARGET).cpp -L. bin/core.a $(LDFLAGS)
+	$(CC) $(ALL_CFLAGS) -o $@ source/$(TARGET).cpp -L. bin/core.a $(LDFLAGS)
 
 # Compile: create object files from C++ source files.
 .cpp.o:
