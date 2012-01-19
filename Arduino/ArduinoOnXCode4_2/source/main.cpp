@@ -1,7 +1,8 @@
 
 
 #include "WProgram.h"
-#include "ArduinoProgram.h"
+#include "ArduinoProgram.cpp"
+
 
 // Arduino doesn't know about new and delete, so let's teach 'm :
 #include <stdlib.h> // for malloc and free
@@ -13,10 +14,10 @@ void operator delete(void* ptr) { free(ptr); }
 int main(void)
 {
 	init();
-	ArduinoProgram arduino;
-	arduino.setup();
+
+	setup();
 	for (;;)
-		arduino.loop();
+		loop();
 	return 0;
 }
 
