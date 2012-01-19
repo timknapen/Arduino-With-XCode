@@ -10,11 +10,9 @@
  
  *********************************************/
 	
-//#include "Stepper.h"	
 
 #include "TestThing.h"
 
-#warning "incorporating latest adjustments!"
 class ArduinoProgram {
 public:
 	
@@ -29,8 +27,6 @@ public:
 	// a class in our src/ folder
 	TestThing* thing;
 	
-	// a library inside the Arduino App.
-	//Stepper* steppy;
 
 };
 

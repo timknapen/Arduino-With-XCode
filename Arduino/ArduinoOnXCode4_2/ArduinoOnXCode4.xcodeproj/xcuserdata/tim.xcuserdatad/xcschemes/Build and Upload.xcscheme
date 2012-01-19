@@ -14,7 +14,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "19A5FF0D14757BAC00FAEAAB"
-               BuildableName = "Upload"
+               BuildableName = "Build and Upload"
                BlueprintName = "Build and Upload"
                ReferencedContainer = "container:ArduinoOnXCode4.xcodeproj">
             </BuildableReference>
