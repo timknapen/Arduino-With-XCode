@@ -10,7 +10,7 @@
  
  *********************************************/
 	
-#include "Stepper.h"	
+//#include "Stepper.h"	
 
 #include "TestThing.h"
 
@@ -30,7 +30,7 @@ public:
 	TestThing* thing;
 	
 	// a library inside the Arduino App.
-	Stepper* steppy;
+	//Stepper* steppy;
 
 };
 

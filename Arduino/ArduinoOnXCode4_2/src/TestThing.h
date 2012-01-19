@@ -6,6 +6,7 @@
 class TestThing{
 public:
 	void setup();
+    void doSomething();
 };
 
 

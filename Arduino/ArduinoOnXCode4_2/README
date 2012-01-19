@@ -1,6 +1,12 @@
 
 ### This is the Arduino on XCode 4 help file ###
 
+    This is not a real "XCode Template". It is an empty project to start from. 
+    Just copy the whole folder, give it another name and start working with it this way.
+    
+    This project is for Arduino.app version 0022 !!!
+    The 1.0 version has had a few changes internally that break the makefile included here (I think)
+
 	The preferred place for help, discussion and suggestions is here:
 	http://arduino.cc/forum/index.php/topic,49956.0.html
 
@@ -15,15 +21,23 @@
     In the middle window click on the project name under "Project"
     Click the "Info" tab (next to Build Settings)
     Under "Configuration" click the triangle next to "Release" to make it fold open. 
-    Then fold open the project to see the "Build" and "Build and Upload" targets.
+    Then fold open the project to see the "Build" , "Clean" and "Build and Upload" targets.
     Select your board in the "Based on Configuration File" next to each target.
 
+    WARNING it appears that you can't compile the .cpp files included in Arduino.app when it is inside /Applications/
+    I assume this is because Lion has new permissions for the Applications/ folder.
+    Suggested solution: move Arduino.app out of /Applications/ into a folder you have full read/write access to.
+    You will have to change the build setting called 'ARDUINO_APP_PATH' to the correct new path. 
+    Or you change the permissions of Arduino.app to allow everyone read/write access.
+    To do this, you can go to Arduino.app, right click > Show Package Contents,
+    Right click on Contents > Show Info. Then scroll down to "Sharing and Permissions" and set everybody's persmissions to Read & Write.
+    And choose "Apply to enclosing items" from the gear drop-down.
 
 ###	LIBRARIES
 	
-	All the standard libraries included in Arduino.app are already included in the makefile. 
-	You just need to #include them like you normally would.
-
+	All the standard libraries included in Arduino.app are already included in the build settings.
+    
+    
 
 ###	To add another library:
 

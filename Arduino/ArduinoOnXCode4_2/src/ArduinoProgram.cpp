@@ -7,16 +7,13 @@ void ArduinoProgram::setup(){
 
 	Serial.println("-----------------------------");
 	Serial.println("   saying hi from XCode4     ");
-    Serial.println("   ... again   ");
+    Serial.println("   ... again and AGAIN   ");
 	Serial.println("-----------------------------");
 	
 	//our class from our src/ folder
 	thing = new TestThing();
 	thing -> setup();
 	
-	// this is a stepper
-	steppy = new Stepper(1,2,3);
-	steppy->step(2);
 	
 }
 

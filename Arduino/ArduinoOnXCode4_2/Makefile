@@ -1,34 +1,33 @@
 
-ARDUINO = /Applications/Arduino.app/Contents/Resources/Java/hardware/arduino/cores/arduino
-LIB_ROOT = /Applications/Arduino.app/Contents/Resources/Java/libraries
-#AVRDUDE_DIR = /usr/local/CrossPack-AVR/bin # Crosspack version
-AVRDUDE_DIR = /Applications/Arduino.app/Contents/Resources/Java/hardware/tools/avr/bin
-AVRDUDE_CONF= /Applications/Arduino.app/Contents/Resources/Java/hardware/tools/avr/etc/avrdude.conf
+
+AVRDUDE_DIR = $(ARDUINO_APP_PATH)/Contents/Resources/Java/hardware/tools/avr/bin
+AVRDUDE_CONF= $(ARDUINO_APP_PATH)/Contents/Resources/Java/hardware/tools/avr/etc/avrdude.conf
 SIZE = $(AVRDUDE_DIR)/avr-size
 SOURCES = $(wildcard src/*.cpp)
 
-# loading libraries
-LIBRARIES = EEPROM Ethernet/utility SPI \
-Firmata LiquidCrystal Matrix Sprite \
-SD SD/utility Servo SoftwareSerial \
-Stepper Wire Wire/utility
+    @echo "Whatever you do, this is the called action:" $(ACTION);
+
+# add arduino app path to the paths..
+ARD_LIBRARIES = $(ARDUINO_LIBRARIES)
+ARD_LIBRARIES_PATH = $(ARDUINO_APP_PATH)$(ARDUINO_LIBRARIES_PATH)
+ARD_PATH = $(ARDUINO_APP_PATH)$(ARDUINO_PATH)
 
 # make the correct paths for the libraries
-INCLUDE_LIBRARIES = $(addprefix -I$(LIB_ROOT)/,$(LIBRARIES)) \
+INCLUDE_LIBRARIES = $(addprefix -I$(ARD_LIBRARIES_PATH)/,$(ARD_LIBRARIES)) \
 $(addprefix -I, $(LIBRARY_PATHS))
 
 # find .cpp files in libraries
-CPP_LIBRARIES = $(foreach lib,$(LIBRARIES),$(wildcard $(LIB_ROOT)/$(lib)/*.cpp))
+CPP_LIBRARIES = $(foreach lib,$(ARD_LIBRARIES),$(wildcard $(ARD_LIBRARIES_PATH)/$(lib)/*.cpp))
 CPP_LIBRARIES += $(foreach item, $(LIBRARY_PATHS), $(wildcard $(item)/*.cpp))
 
 # main file
 TARGET = main
 
 # find .c files in arduino directory
-SRC = $(wildcard $(ARDUINO)/*.c)
+SRC = $(wildcard $(ARD_PATH)/*.c)
 
 # .cpp files from libraries and arduino directory
-CXXSRC = $(SOURCES) $(wildcard $(ARDUINO)/*.cpp) $(CPP_LIBRARIES) 
+CXXSRC = $(SOURCES) $(wildcard $(ARD_PATH)/*.cpp) $(CPP_LIBRARIES) 
 
 
 # Name of this Makefile (used for "make depend").
@@ -46,8 +45,8 @@ CDEFS = -DF_CPU=$(F_CPU)
 CXXDEFS = -DF_CPU=$(F_CPU)
 
 # Place -I options here : include libraries
-CINCS = -I$(ARDUINO) $(INCLUDE_LIBRARIES)
-CXXINCS = -I$(ARDUINO) $(INCLUDE_LIBRARIES)
+CINCS = -I$(ARD_PATH) $(INCLUDE_LIBRARIES)
+CXXINCS = -I$(ARD_PATH) $(INCLUDE_LIBRARIES)
 
 # Compiler flag to set the C Standard level.
 # c89   - "ANSI" C
@@ -97,7 +96,7 @@ ALL_ASFLAGS = -mmcu=$(MCU) -I. -x assembler-with-cpp $(ASFLAGS)
 
 
 # Default target.
-all: clean build sizeafter
+all: clean build sizeafter upload
 	@echo "action = all";
 
 
@@ -131,6 +130,8 @@ folder:
 # Program the device.  
 upload: bin/$(TARGET).hex
 	$(AVRDUDE) -C$(AVRDUDE_CONF) $(AVRDUDE_FLAGS) $(AVRDUDE_WRITE_FLASH)
+    @echo "action = upload";
+
 
 # Display size of file.
 HEXSIZE = $(SIZE) --target=$(FORMAT) bin/$(TARGET).hex
@@ -209,7 +210,7 @@ bin/$(TARGET).elf: bin/core.a
 
 # Target: clean project.
 clean:
-	$(REMOVE) bin/$(TARGET).hex bin/$(TARGET).eep bin/$(TARGET).cof bin/$(TARGET).elf \
+	$(REMOVE) bin/*.o bin/*.a bin/$(TARGET).hex bin/$(TARGET).eep bin/$(TARGET).cof bin/$(TARGET).elf \
 	bin/$(TARGET).map bin/$(TARGET).sym bin/$(TARGET).lss bin/core.a \
 	$(OBJ) $(LST) $(SRC:.c=.s) $(SRC:.c=.d) $(CXXSRC:.cpp=.s) $(CXXSRC:.cpp=.d)
 
