@@ -1,0 +1,16 @@
+#include "_basic_arduino_settings.xcconfig"
+
+// Sanguino Makerbot Motherboard
+ARDUINO_PATH = /Contents/Resources/Java/hardware/Sanguino/cores/arduino
+ARDUINO_LIBRARIES = Wire Wire/utility EEPROM Servo SoftwareSerial Stepper 
+
+BOARD = Sanguino_644
+DESCRIPTION = Sanguino on Makerbot Motherboard v1.2
+MCU = atmega644p
+F_CPU = 16000000
+FORMAT = ihex
+UPLOAD_RATE = 38400
+PORT = /dev/tty.usbserial*
+
+
+

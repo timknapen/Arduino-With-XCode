@@ -1,0 +1,4 @@
+// nano is the same as Duemilanove
+#include "Duemilanove328.xcconfig"
+
+BOARD = Arduino_Nano
