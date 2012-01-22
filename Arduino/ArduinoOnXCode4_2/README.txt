@@ -1,6 +1,6 @@
 
 
-### New release 4.3c
+### New release 4.2c
 
     Declare your library repository    
     ----------------------------------
@@ -20,7 +20,7 @@
     Other items
     ----------------------------------
     New groups
-    Simplified project without unnecesary Sketch.h 
+    Simplified project without unnecessary Sketch.h 
     Renamed Index false target for code sense
     
 
@@ -30,10 +30,12 @@
     Close serial console before building and before uploading
     Hints
         screen $(PORT) 19200
+	screen -X kill
 
 
     2011-01-20 Rei Vilo
-    
+
+    ----------------------------------    
 
 ### This is the Arduino on XCode 4 help file ###
 

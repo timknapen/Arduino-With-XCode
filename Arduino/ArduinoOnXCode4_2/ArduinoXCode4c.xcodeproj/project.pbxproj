@@ -143,8 +143,6 @@
 		22FCDCB914C8F1830033ABF6 /* index.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = index.1; sourceTree = "<group>"; };
 		27BD0CA914C9CF8600B9CB9A /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = source/main.cpp; sourceTree = SOURCE_ROOT; };
 		27BD0CAA14C9CF8600B9CB9A /* Sketch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Sketch.cpp; path = source/Sketch.cpp; sourceTree = SOURCE_ROOT; };
-		27BD0CAB14C9CF8600B9CB9A /* TestThing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TestThing.cpp; path = source/TestThing.cpp; sourceTree = SOURCE_ROOT; };
-		27BD0CAC14C9CF8600B9CB9A /* TestThing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestThing.h; path = source/TestThing.h; sourceTree = SOURCE_ROOT; };
 		27BD0CEC14C9DC8C00B9CB9A /* AM306223R1DBGEVB_BOM_ROHS.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = AM306223R1DBGEVB_BOM_ROHS.pdf; sourceTree = "<group>"; };
 		27BD0CED14C9DC8C00B9CB9A /* AM306223R1DBGEVB_SCHEMATIC.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = AM306223R1DBGEVB_SCHEMATIC.pdf; sourceTree = "<group>"; };
 		27BD0CEE14C9DC8C00B9CB9A /* AM306227R1DBGEVB_BOM_ROHS.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = AM306227R1DBGEVB_BOM_ROHS.pdf; sourceTree = "<group>"; };
@@ -247,8 +245,6 @@
 			children = (
 				27BD0CA914C9CF8600B9CB9A /* main.cpp */,
 				27BD0CAA14C9CF8600B9CB9A /* Sketch.cpp */,
-				27BD0CAB14C9CF8600B9CB9A /* TestThing.cpp */,
-				27BD0CAC14C9CF8600B9CB9A /* TestThing.h */,
 			);
 			name = Source;
 			path = src;
