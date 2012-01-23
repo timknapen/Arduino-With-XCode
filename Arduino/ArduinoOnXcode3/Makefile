@@ -25,12 +25,12 @@ BOARDS_TXT = $(ARDUINO_APP_PATH)$(BOARDS_TXT_PATH)
 nullstring  :=
 spacestring := $(nullstring) # end of the line
 equalstring := $(nullstring)=# end of the line
-READ_BOARD_TXT = $(lastword $(subst $(equalstring),$(spacestring),$(shell grep -e$(1) $(2)))) 
-READ_DESCR = $(subst $(equalstring),$(spacestring),$(shell grep -e$(1) $(2))) 
+#READ_BOARD_TXT = $(lastword $(subst $(equalstring),$(spacestring),$(shell grep -e$(1) $(2)))) 
+READ_BOARD_TXT = $(subst $(1)=,, $(shell grep -e$(1) $(2)))
 
 parameter = build.f_cpu
 F_CPU = $(call READ_BOARD_TXT, $(BOARDNAME).build.f_cpu, $(BOARDS_TXT))
-DESCRIPTION = $(call READ_DESCR, $(BOARDNAME).name, $(BOARDS_TXT))
+DESCRIPTION = $(call READ_BOARD_TXT, $(BOARDNAME).name, $(BOARDS_TXT))
 MCU = $(call READ_BOARD_TXT, $(BOARDNAME).build.mcu, $(BOARDS_TXT))
 UPLOAD_RATE = $(call READ_BOARD_TXT, $(BOARDNAME).upload.speed, $(BOARDS_TXT))
 FORMAT = ihex
@@ -133,21 +133,22 @@ sym: bin/$(TARGET).sym
 # print info
 info:
 	@echo "------------------------ some info for debugging ------------------";
-	@echo "board name: " $(BOARDNAME);
-	@echo "description: " $(DESCRIPTION);
-	@echo "cpu: " $(F_CPU); 
-	@echo "mcu: " $(MCU);
-	@echo "upload speed: " $(UPLOAD_RATE);
-	@echo "port " $(PORT);
+	@echo "board name: \t" $(BOARDNAME);
+	@echo "description: \t" $(DESCRIPTION);
+	@echo "cpu: \t\t\t" $(F_CPU); 
+	@echo "mcu: \t\t" $(MCU);
+	@echo "upload speed: \t" $(UPLOAD_RATE);
+	@echo "port: \t\t" $(PORT);
 	
 	@echo " ";
 
-	@echo "Library paths: " $(LIBRARY_PATHS);
-	@echo "Library cpp files: " $(foreach item,$(LIBRARY_PATHS), $(wildcard $(item)/*.cpp));
-	@echo "Compiling sources: " $(CXXSRC);
-	@echo "Compiling libraries sources: " $(CPP_LIBRARIES);
-	@echo "Included libraries: " $(INCLUDE_LIBRARIES);
+	@echo "Library paths: \n\t" $(LIBRARY_PATHS);
+	@echo "Library cpp files: \n\t" $(foreach item,$(LIBRARY_PATHS), $(wildcard $(item)/*.cpp));
+	@echo "Compiling sources: \n\t" $(CXXSRC);
+	@echo "Compiling libraries sources: \n\t" $(CPP_LIBRARIES);
+	@echo "Included libraries: \n\t" $(INCLUDE_LIBRARIES);
 	@echo "------------------------ end of debugging info --------------------";
+	@echo " ";
 	
 # create the bin folder if it doesn't exist
 folder:
