@@ -1,6 +1,0 @@
-// Basic settings for an Arduino Board
-
-ARDUINO_APP_PATH = /Applications/Arduino.app
-ARDUINO_PATH = /Contents/Resources/Java/hardware/arduino/cores/arduino
-ARDUINO_LIBRARIES_PATH = /Contents/Resources/Java/libraries
-ARDUINO_LIBRARIES = Wire Wire/utility EEPROM Ethernet Ethernet/utility  SPI Firmata LiquidCrystal Matrix Sprite SD SD/utility Servo SoftwareSerial Stepper 
