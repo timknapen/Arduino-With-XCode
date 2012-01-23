@@ -5,8 +5,6 @@ AVRDUDE_CONF= $(ARDUINO_APP_PATH)/Contents/Resources/Java/hardware/tools/avr/etc
 SIZE = $(AVRDUDE_DIR)/avr-size
 SOURCES = $(wildcard src/*.cpp)
 
-    @echo "Whatever you do, this is the called action:" $(ACTION);
-
 # add arduino app path to the paths..
 ARD_LIBRARIES = $(ARDUINO_LIBRARIES)
 ARD_LIBRARIES_PATH = $(ARDUINO_APP_PATH)$(ARDUINO_LIBRARIES_PATH)
