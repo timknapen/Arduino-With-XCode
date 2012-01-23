@@ -20,11 +20,11 @@
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
 					20,
-					249,
+					268,
 					20,
-					149,
-					150,
-					84,
+					168,
+					169,
+					103,
 					20,
 				);
 				PBXFileTableDataSourceColumnsKey = (
@@ -82,8 +82,8 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 344188116;
-			PBXWorkspaceStateSaveDate = 344188116;
+			PBXPerProjectTemplateStateSaveDate = 349044145;
+			PBXWorkspaceStateSaveDate = 349044145;
 		};
 		perUserProjectItems = {
 			224BED571483DEB800A7506B /* PBXTextBookmark */ = 224BED571483DEB800A7506B /* PBXTextBookmark */;
@@ -100,15 +100,14 @@
 			224BED621483DEB800A7506B /* PBXTextBookmark */ = 224BED621483DEB800A7506B /* PBXTextBookmark */;
 			224BED631483DEB800A7506B /* PBXTextBookmark */ = 224BED631483DEB800A7506B /* PBXTextBookmark */;
 			224BEDA91483E19800A7506B /* PBXTextBookmark */ = 224BEDA91483E19800A7506B /* PBXTextBookmark */;
-			224BEDAA1483E19800A7506B /* PBXTextBookmark */ = 224BEDAA1483E19800A7506B /* PBXTextBookmark */;
-			224BEDF21483E70B00A7506B /* PBXTextBookmark */ = 224BEDF21483E70B00A7506B /* PBXTextBookmark */;
-			224BEDF31483E70B00A7506B /* PBXTextBookmark */ = 224BEDF31483E70B00A7506B /* PBXTextBookmark */;
 			224BEDF41483E70B00A7506B /* PBXTextBookmark */ = 224BEDF41483E70B00A7506B /* PBXTextBookmark */;
 			224BEDF51483E70B00A7506B /* PBXTextBookmark */ = 224BEDF51483E70B00A7506B /* PBXTextBookmark */;
 			224BEDF61483E70B00A7506B /* PBXTextBookmark */ = 224BEDF61483E70B00A7506B /* PBXTextBookmark */;
-			224BEDF71483E70B00A7506B /* PBXTextBookmark */ = 224BEDF71483E70B00A7506B /* PBXTextBookmark */;
-			224BEDF81483E70B00A7506B /* PBXTextBookmark */ = 224BEDF81483E70B00A7506B /* PBXTextBookmark */;
-			2294D65014755A16008E1C04 /* PBXTextBookmark */ = 2294D65014755A16008E1C04 /* PBXTextBookmark */;
+			22B20C9914CDFE3500FDDCDA /* PBXTextBookmark */ = 22B20C9914CDFE3500FDDCDA /* PBXTextBookmark */;
+			22B20C9A14CDFE3500FDDCDA /* PBXTextBookmark */ = 22B20C9A14CDFE3500FDDCDA /* PBXTextBookmark */;
+			22B20C9B14CDFE3500FDDCDA /* PBXTextBookmark */ = 22B20C9B14CDFE3500FDDCDA /* PBXTextBookmark */;
+			22B20C9C14CDFE3500FDDCDA /* PBXTextBookmark */ = 22B20C9C14CDFE3500FDDCDA /* PBXTextBookmark */;
+			22B20C9D14CDFE3500FDDCDA /* PBXTextBookmark */ = 22B20C9D14CDFE3500FDDCDA /* PBXTextBookmark */;
 		};
 		sourceControlManager = 22ACDB27146E9A590021C93A /* Source Control */;
 		userBuildSettings = {
@@ -246,9 +245,16 @@
 	};
 	224BEDA71483E17E00A7506B /* _basic_arduino_settings.xcconfig */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1097, 546}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 378}";
+			sepNavIntBoundsRect = "{{0, 0}, {1097, 364}}";
+			sepNavSelRange = "{634, 0}";
+			sepNavVisRange = "{0, 819}";
+		};
+	};
+	224BEDA81483E17E00A7506B /* Sanguino.xcconfig */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {776, 364}}";
+			sepNavSelRange = "{320, 0}";
+			sepNavVisRange = "{0, 320}";
 		};
 	};
 	224BEDA91483E19800A7506B /* PBXTextBookmark */ = {
@@ -259,36 +265,6 @@
 		rLoc = 43;
 		rType = 0;
 		vrLen = 200;
-		vrLoc = 0;
-	};
-	224BEDAA1483E19800A7506B /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 2294D52614753759008E1C04 /* BT168.xcconfig */;
-		name = "BT168.xcconfig: 1";
-		rLen = 44;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 234;
-		vrLoc = 0;
-	};
-	224BEDF21483E70B00A7506B /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 224BEDA71483E17E00A7506B /* _basic_arduino_settings.xcconfig */;
-		name = "_basic_arduino_settings.xcconfig: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 378;
-		vrLoc = 0;
-	};
-	224BEDF31483E70B00A7506B /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 22ACDB40146E9AC60021C93A /* Makefile */;
-		name = "Makefile: 123";
-		rLen = 6;
-		rLoc = 3709;
-		rType = 0;
-		vrLen = 927;
 		vrLoc = 0;
 	};
 	224BEDF41483E70B00A7506B /* PBXTextBookmark */ = {
@@ -321,34 +297,13 @@
 		vrLen = 446;
 		vrLoc = 0;
 	};
-	224BEDF71483E70B00A7506B /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 22ACDB43146E9ACD0021C93A /* ArduinoProgram.h */;
-		name = "ArduinoProgram.h: 15";
-		rLen = 0;
-		rLoc = 265;
-		rType = 0;
-		vrLen = 322;
-		vrLoc = 0;
-	};
-	224BEDF81483E70B00A7506B /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 22ACDB43146E9ACD0021C93A /* ArduinoProgram.h */;
-		name = "ArduinoProgram.h: 15";
-		rLen = 0;
-		rLoc = 265;
-		rType = 0;
-		vrLen = 322;
-		vrLoc = 0;
-	};
-	2294D52614753759008E1C04 /* BT168.xcconfig */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {776, 546}}";
-			sepNavSelRange = "{0, 44}";
-			sepNavVisRange = "{0, 234}";
-		};
-	};
 	2294D52714753759008E1C04 /* BT328.xcconfig */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = text.xcconfig;
+		name = BT328.xcconfig;
+		path = "/Users/tim/Documents/GITHUB/Arduino-With-XCode/Arduino/ArduinoOnXcode3/config/BT328.xcconfig";
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {776, 546}}";
 			sepNavSelRange = "{43, 0}";
@@ -356,6 +311,12 @@
 		};
 	};
 	2294D52814753759008E1C04 /* Diecimila168.xcconfig */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = text.xcconfig;
+		name = Diecimila168.xcconfig;
+		path = "/Users/tim/Documents/GITHUB/Arduino-With-XCode/Arduino/ArduinoOnXcode3/config/Diecimila168.xcconfig";
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {776, 546}}";
 			sepNavSelRange = "{43, 0}";
@@ -363,6 +324,12 @@
 		};
 	};
 	2294D52914753759008E1C04 /* Duemilanove168.xcconfig */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = text.xcconfig;
+		name = Duemilanove168.xcconfig;
+		path = "/Users/tim/Documents/GITHUB/Arduino-With-XCode/Arduino/ArduinoOnXcode3/config/Duemilanove168.xcconfig";
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {776, 546}}";
 			sepNavSelRange = "{0, 0}";
@@ -370,6 +337,12 @@
 		};
 	};
 	2294D52A14753759008E1C04 /* Duemilanove328.xcconfig */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = text.xcconfig;
+		name = Duemilanove328.xcconfig;
+		path = "/Users/tim/Documents/GITHUB/Arduino-With-XCode/Arduino/ArduinoOnXcode3/config/Duemilanove328.xcconfig";
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {776, 546}}";
 			sepNavSelRange = "{43, 0}";
@@ -377,6 +350,12 @@
 		};
 	};
 	2294D52B14753759008E1C04 /* mega1280.xcconfig */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = text.xcconfig;
+		name = mega1280.xcconfig;
+		path = "/Users/tim/Documents/GITHUB/Arduino-With-XCode/Arduino/ArduinoOnXcode3/config/mega1280.xcconfig";
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {776, 546}}";
 			sepNavSelRange = "{43, 0}";
@@ -384,6 +363,12 @@
 		};
 	};
 	2294D52C14753759008E1C04 /* Mega2560.xcconfig */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = text.xcconfig;
+		name = Mega2560.xcconfig;
+		path = "/Users/tim/Documents/GITHUB/Arduino-With-XCode/Arduino/ArduinoOnXcode3/config/Mega2560.xcconfig";
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {776, 546}}";
 			sepNavSelRange = "{43, 0}";
@@ -391,6 +376,12 @@
 		};
 	};
 	2294D52D14753759008E1C04 /* mini.xcconfig */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = text.xcconfig;
+		name = mini.xcconfig;
+		path = "/Users/tim/Documents/GITHUB/Arduino-With-XCode/Arduino/ArduinoOnXcode3/config/mini.xcconfig";
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {776, 546}}";
 			sepNavSelRange = "{43, 0}";
@@ -398,6 +389,12 @@
 		};
 	};
 	2294D52E14753759008E1C04 /* Nano.xcconfig */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = text.xcconfig;
+		name = Nano.xcconfig;
+		path = "/Users/tim/Documents/GITHUB/Arduino-With-XCode/Arduino/ArduinoOnXcode3/config/Nano.xcconfig";
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {776, 546}}";
 			sepNavSelRange = "{0, 0}";
@@ -405,6 +402,12 @@
 		};
 	};
 	2294D52F14753759008E1C04 /* Nano168.xcconfig */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = text.xcconfig;
+		name = Nano168.xcconfig;
+		path = "/Users/tim/Documents/GITHUB/Arduino-With-XCode/Arduino/ArduinoOnXcode3/config/Nano168.xcconfig";
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {776, 546}}";
 			sepNavSelRange = "{0, 0}";
@@ -412,6 +415,12 @@
 		};
 	};
 	2294D53014753759008E1C04 /* NG8.xcconfig */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = text.xcconfig;
+		name = NG8.xcconfig;
+		path = "/Users/tim/Documents/GITHUB/Arduino-With-XCode/Arduino/ArduinoOnXcode3/config/NG8.xcconfig";
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {776, 546}}";
 			sepNavSelRange = "{43, 0}";
@@ -419,6 +428,12 @@
 		};
 	};
 	2294D53114753759008E1C04 /* NG168.xcconfig */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = text.xcconfig;
+		name = NG168.xcconfig;
+		path = "/Users/tim/Documents/GITHUB/Arduino-With-XCode/Arduino/ArduinoOnXcode3/config/NG168.xcconfig";
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {776, 546}}";
 			sepNavSelRange = "{43, 0}";
@@ -426,6 +441,12 @@
 		};
 	};
 	2294D53214753759008E1C04 /* Pro168.xcconfig */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = text.xcconfig;
+		name = Pro168.xcconfig;
+		path = "/Users/tim/Documents/GITHUB/Arduino-With-XCode/Arduino/ArduinoOnXcode3/config/Pro168.xcconfig";
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {776, 546}}";
 			sepNavSelRange = "{43, 0}";
@@ -433,6 +454,12 @@
 		};
 	};
 	2294D53314753759008E1C04 /* Pro328.xcconfig */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = text.xcconfig;
+		name = Pro328.xcconfig;
+		path = "/Users/tim/Documents/GITHUB/Arduino-With-XCode/Arduino/ArduinoOnXcode3/config/Pro328.xcconfig";
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {776, 546}}";
 			sepNavSelRange = "{43, 0}";
@@ -440,21 +467,17 @@
 		};
 	};
 	2294D53514753759008E1C04 /* UNO.xcconfig */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = text.xcconfig;
+		name = UNO.xcconfig;
+		path = "/Users/tim/Documents/GITHUB/Arduino-With-XCode/Arduino/ArduinoOnXcode3/config/UNO.xcconfig";
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {776, 546}}";
 			sepNavSelRange = "{43, 0}";
 			sepNavVisRange = "{0, 200}";
 		};
-	};
-	2294D65014755A16008E1C04 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 22ACDB46146E9ACD0021C93A /* TestThing.cpp */;
-		name = "TestThing.cpp: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 99;
-		vrLoc = 0;
 	};
 	22ACDB27146E9A590021C93A /* Source Control */ = {
 		isa = PBXSourceControlManager;
@@ -472,9 +495,9 @@
 	};
 	22ACDB40146E9AC60021C93A /* Makefile */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {901, 2808}}";
-			sepNavSelRange = "{3709, 6}";
-			sepNavVisRange = "{0, 927}";
+			sepNavIntBoundsRect = "{{0, 0}, {776, 3185}}";
+			sepNavSelRange = "{105, 0}";
+			sepNavVisRange = "{0, 1144}";
 		};
 	};
 	22ACDB42146E9ACD0021C93A /* main.cpp */ = {
@@ -487,7 +510,7 @@
 	};
 	22ACDB43146E9ACD0021C93A /* ArduinoProgram.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {776, 345}}";
+			sepNavIntBoundsRect = "{{0, 0}, {776, 364}}";
 			sepNavSelRange = "{265, 0}";
 			sepNavVisRange = "{0, 322}";
 			sepNavWindowFrame = "{{15, 38}, {770, 735}}";
@@ -500,13 +523,55 @@
 			sepNavVisRange = "{0, 356}";
 		};
 	};
-	22ACDB46146E9ACD0021C93A /* TestThing.cpp */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.cpp.cpp;
-		name = TestThing.cpp;
-		path = "/Developer/Library/Xcode/Project Templates/Arduino/ArduinoOnXcode2/src/TestThing.cpp";
-		sourceTree = "<absolute>";
+	22B20C9914CDFE3500FDDCDA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 22ACDB43146E9ACD0021C93A /* ArduinoProgram.h */;
+		name = "ArduinoProgram.h: 15";
+		rLen = 0;
+		rLoc = 265;
+		rType = 0;
+		vrLen = 322;
+		vrLoc = 0;
+	};
+	22B20C9A14CDFE3500FDDCDA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 22ACDB40146E9AC60021C93A /* Makefile */;
+		name = "Makefile: 4";
+		rLen = 0;
+		rLoc = 105;
+		rType = 0;
+		vrLen = 1144;
+		vrLoc = 0;
+	};
+	22B20C9B14CDFE3500FDDCDA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 224BEDA71483E17E00A7506B /* _basic_arduino_settings.xcconfig */;
+		name = "_basic_arduino_settings.xcconfig: 11";
+		rLen = 0;
+		rLoc = 634;
+		rType = 0;
+		vrLen = 819;
+		vrLoc = 0;
+	};
+	22B20C9C14CDFE3500FDDCDA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 224BEDA81483E17E00A7506B /* Sanguino.xcconfig */;
+		name = "Sanguino.xcconfig: 10";
+		rLen = 0;
+		rLoc = 320;
+		rType = 0;
+		vrLen = 320;
+		vrLoc = 0;
+	};
+	22B20C9D14CDFE3500FDDCDA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 224BEDA81483E17E00A7506B /* Sanguino.xcconfig */;
+		name = "Sanguino.xcconfig: 10";
+		rLen = 0;
+		rLoc = 320;
+		rType = 0;
+		vrLen = 320;
+		vrLoc = 0;
 	};
 	22F5F69B146EA68B004F0E2E /* README */ = {
 		uiCtxt = {
