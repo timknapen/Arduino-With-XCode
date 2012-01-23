@@ -1,5 +1,4 @@
 
-AVRDUDE_DIR = /Applications/Arduino.app/Contents/Resources/Java/hardware/tools/avr/bin
 AVRDUDE_DIR = /Applications/Arduino.app/Contents/Resources/Java/hardware/tools/avr/bin/
 AVRDUDE_CONF= /Applications/Arduino.app/Contents/Resources/Java/hardware/tools/avr/etc/avrdude.conf
 SIZE = $(AVRDUDE_DIR)/avr-size
@@ -7,7 +6,7 @@ SOURCES = $(wildcard src/*.cpp)
 
 # make the correct paths for the libraries
 INCLUDE_LIBRARIES = $(addprefix -I$(ARDUINO_LIBRARIES_PATH)/,$(ARDUINO_LIBRARIES)) \
-$(addprefix -I, $(LIBRARY_PATHS))
+$(addprefix -I, $(wildcard $(LIBRARY_PATHS)))
 
 # find .cpp files in libraries
 CPP_LIBRARIES = $(foreach lib,$(ARDUINO_LIBRARIES),$(wildcard $(ARDUINO_LIBRARIES_PATH)/$(lib)/*.cpp))
@@ -109,7 +108,7 @@ sym: bin/$(TARGET).sym
 info:
 	@echo "------------------------ some info for debugging ------------------";
 	@echo "Using board: " $(BOARD);
-	@echo "Library paths: " $(addprefix -I, $(LIBRARY_PATHS));
+	@echo "Library paths: " $(LIBRARY_PATHS);
 	@echo "Library cpp files: " $(foreach item,$(LIBRARY_PATHS), $(wildcard $(item)/*.cpp));
 	@echo "Compiling sources: " $(CXXSRC);
 	@echo "Compiling libraries sources: " $(CPP_LIBRARIES);
