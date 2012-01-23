@@ -9,7 +9,7 @@ I started again on this after reading and following this great tutorial:
 http://www.quietless.com/kitchen/setting-up-xcode-to-compile-upload-to-an-arduino-atmega328-duemilanove/
 
 
-## for XCode 3.2
+## for OSX Snow Leopard + XCode 3.2 the project is called "ArduinoOnXCode3"
 Installing the templates:
 Copy the folder Arduino to your XCode project templates folder.
 For me this is at:
@@ -20,11 +20,11 @@ with Sanguino, Arduino NG (atmega8) and Arduino UNO
 
 
 
-## for XCode 4
+## for OSX Lion + XCode 4 the project is called "ArduinoOnXCode4"
 The ArduinoOnXCode4 project is NOT a template, you should use it as a blank project to start from. Just copy the whole folder.
 
 This has been tested with Xcode 4.2 + Arduino 0022 on OSX10.7.2
-With Arduino UNO
+With Arduino UNO, Arduino NG, Sanguino.
 
 
 The preferred place for help, discussion and suggestions is here:
