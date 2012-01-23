@@ -271,13 +271,10 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateExpansionKey</key>
 							<array>
 								<string>08FB7794FE84155DC02AAC07</string>
-								<string>22ACDB41146E9ACD0021C93A</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>5</integer>
-									<integer>3</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -315,7 +312,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>22ACDB1F146E9A590021C93A</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>ArduinoProgram.h</string>
+								<string>Sanguino.xcconfig</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -323,14 +320,13 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>22ACDB20146E9A590021C93A</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>ArduinoProgram.h</string>
+										<string>Sanguino.xcconfig</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>224BEDF81483E70B00A7506B</string>
+										<string>22B20C9D14CDFE3500FDDCDA</string>
 										<key>history</key>
 										<array>
-											<string>2294D65014755A16008E1C04</string>
 											<string>224BED571483DEB800A7506B</string>
 											<string>224BED581483DEB800A7506B</string>
 											<string>224BED591483DEB800A7506B</string>
@@ -345,13 +341,13 @@
 											<string>224BED621483DEB800A7506B</string>
 											<string>224BED631483DEB800A7506B</string>
 											<string>224BEDA91483E19800A7506B</string>
-											<string>224BEDAA1483E19800A7506B</string>
-											<string>224BEDF21483E70B00A7506B</string>
-											<string>224BEDF31483E70B00A7506B</string>
 											<string>224BEDF41483E70B00A7506B</string>
 											<string>224BEDF51483E70B00A7506B</string>
 											<string>224BEDF61483E70B00A7506B</string>
-											<string>224BEDF71483E70B00A7506B</string>
+											<string>22B20C9914CDFE3500FDDCDA</string>
+											<string>22B20C9A14CDFE3500FDDCDA</string>
+											<string>22B20C9B14CDFE3500FDDCDA</string>
+											<string>22B20C9C14CDFE3500FDDCDA</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -365,18 +361,18 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {837, 402}}</string>
+								<string>{{0, 0}, {837, 396}}</string>
 								<key>RubberWindowFrame</key>
 								<string>60 154 1148 624 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>402pt</string>
+							<string>396pt</string>
 						</dict>
 						<dict>
 							<key>Proportion</key>
-							<string>176pt</string>
+							<string>182pt</string>
 							<key>Tabs</key>
 							<array>
 								<dict>
@@ -390,7 +386,7 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {837, 149}}</string>
+										<string>{{10, 27}, {837, 155}}</string>
 										<key>RubberWindowFrame</key>
 										<string>60 154 1148 624 0 0 1280 778 </string>
 									</dict>
@@ -474,11 +470,11 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>224BEDF91483E70B00A7506B</string>
+				<string>22B20C9E14CDFE3500FDDCDA</string>
 				<string>1CA23ED40692098700951B8B</string>
-				<string>224BEDFA1483E70B00A7506B</string>
+				<string>22B20C9F14CDFE3500FDDCDA</string>
 				<string>22ACDB1F146E9A590021C93A</string>
-				<string>224BEDFB1483E70B00A7506B</string>
+				<string>22B20CA014CDFE3500FDDCDA</string>
 				<string>1CA23EDF0692099D00951B8B</string>
 				<string>1CA23EE00692099D00951B8B</string>
 				<string>1CA23EE10692099D00951B8B</string>
@@ -648,7 +644,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>/Developer/Library/Xcode/Project Templates/Arduino/ArduinoOnXcode2/___PROJECTNAME___.xcodeproj</string>
+		<string>/Users/tim/Documents/GITHUB/Arduino-With-XCode/Arduino/ArduinoOnXcode3/___PROJECTNAME___.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>60 154 1148 624 0 0 1280 778 </string>

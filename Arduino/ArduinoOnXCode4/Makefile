@@ -5,8 +5,6 @@ AVRDUDE_CONF= $(ARDUINO_APP_PATH)/Contents/Resources/Java/hardware/tools/avr/etc
 SIZE = $(AVRDUDE_DIR)/avr-size
 SOURCES = $(wildcard src/*.cpp)
 
-    @echo "Whatever you do, this is the called action:" $(ACTION);
-
 # add arduino app path to the paths..
 ARD_LIBRARIES = $(ARDUINO_LIBRARIES)
 ARD_LIBRARIES_PATH = $(ARDUINO_APP_PATH)$(ARDUINO_LIBRARIES_PATH)
@@ -14,7 +12,7 @@ ARD_PATH = $(ARDUINO_APP_PATH)$(ARDUINO_PATH)
 
 # make the correct paths for the libraries
 INCLUDE_LIBRARIES = $(addprefix -I$(ARD_LIBRARIES_PATH)/,$(ARD_LIBRARIES)) \
-$(addprefix -I, $(LIBRARY_PATHS))
+$(addprefix -I,  $(wildcard $(LIBRARY_PATHS)))
 
 # find .cpp files in libraries
 CPP_LIBRARIES = $(foreach lib,$(ARD_LIBRARIES),$(wildcard $(ARD_LIBRARIES_PATH)/$(lib)/*.cpp))
@@ -116,7 +114,7 @@ sym: bin/$(TARGET).sym
 info:
 	@echo "------------------------ some info for debugging ------------------";
 	@echo "Using board: " $(BOARD);
-	@echo "Library paths: " $(addprefix -I, $(LIBRARY_PATHS));
+	@echo "Library paths: " $(LIBRARY_PATHS);
 	@echo "Library cpp files: " $(foreach item,$(LIBRARY_PATHS), $(wildcard $(item)/*.cpp));
 	@echo "Compiling sources: " $(CXXSRC);
 	@echo "Compiling libraries sources: " $(CPP_LIBRARIES);
