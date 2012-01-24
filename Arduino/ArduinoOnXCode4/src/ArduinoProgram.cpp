@@ -24,7 +24,6 @@ void ArduinoProgram::loop(){
     
 	Serial.print("loop nr. ");
 	Serial.println(counter, DEC);
-    
     thing->doSomething();
     
     thing->anotherMethod(5);

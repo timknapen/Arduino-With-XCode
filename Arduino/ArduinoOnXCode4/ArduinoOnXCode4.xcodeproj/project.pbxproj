@@ -107,6 +107,7 @@
 		19A5FF0A14757A6A00FAEAAB /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		19A5FF0B14757A6A00FAEAAB /* TestThing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestThing.cpp; sourceTree = "<group>"; };
 		19A5FF0C14757A6A00FAEAAB /* TestThing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestThing.h; sourceTree = "<group>"; };
+		22549FC914CEF1A600F6ABDF /* fake target */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = "fake target"; path = "/Users/tim/Desktop/Arduino-With-XCode/Arduino/ArduinoOnXCode4/build/Release/fake target"; sourceTree = "<absolute>"; };
 		2259D08A14C854960021B514 /* binary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = binary.h; sourceTree = "<group>"; };
 		2259D08B14C854960021B514 /* HardwareSerial.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HardwareSerial.cpp; sourceTree = "<group>"; };
 		2259D08C14C854960021B514 /* HardwareSerial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HardwareSerial.h; sourceTree = "<group>"; };
@@ -182,7 +183,6 @@
 		2259D18D14C855160021B514 /* Wire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wire.h; sourceTree = "<group>"; };
 		2259D19414C85BB30021B514 /* _basic_arduino_settings.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = _basic_arduino_settings.xcconfig; sourceTree = "<group>"; };
 		2259D19514C85BB30021B514 /* Sanguino.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Sanguino.xcconfig; sourceTree = "<group>"; };
-		228929F814CECF3400452A11 /* fake target */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = "fake target"; path = "/Users/tim/Desktop/Arduino-With-XCode/Arduino/ArduinoOnXCode4/build/Release/fake target"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -500,7 +500,7 @@
 			);
 			name = "fake target";
 			productName = "fake target";
-			productReference = 228929F814CECF3400452A11 /* fake target */;
+			productReference = 22549FC914CEF1A600F6ABDF /* fake target */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -630,6 +630,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = __AVR_ATmega8__;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
@@ -669,6 +670,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				HEADER_SEARCH_PATHS = "/Applications/Arduino.app/Contents/Resources/Java/hardware/tools/avr/avr/include/**";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
