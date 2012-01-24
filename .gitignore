@@ -1,22 +1,8 @@
 
-Arduino/ArduinoOnXCode4_2/bin/core.a
-
-Arduino/ArduinoOnXCode4_2/bin/main.elf
-
-Arduino/ArduinoOnXCode4_2/src/TestThing.o
-
-Arduino/ArduinoOnXCode4_2/src/TestThing.o
-
-Arduino/ArduinoOnXCode4_2/src/ArduinoProgram.o
-
-Arduino/ArduinoOnXCode4_2/src/ArduinoProgram.o
-
-Arduino/ArduinoOnXCode4_2/src/main.o
-
 Arduino/ArduinoOnXcode3/build
 
 Arduino/ArduinoOnXcode3/bin
 
 Arduino/ArduinoOnXCode4/src/*.o
 
-Arduino/ArduinoOnXCode4/bin/*
+Arduino/ArduinoOnXCode4/bin
