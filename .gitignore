@@ -16,3 +16,7 @@ Arduino/ArduinoOnXCode4_2/src/main.o
 Arduino/ArduinoOnXcode3/build
 
 Arduino/ArduinoOnXcode3/bin
+
+Arduino/ArduinoOnXCode4/src/*.o
+
+Arduino/ArduinoOnXCode4/bin/*
