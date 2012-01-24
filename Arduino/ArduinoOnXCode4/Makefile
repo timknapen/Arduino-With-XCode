@@ -7,11 +7,11 @@ SOURCES = $(wildcard src/*.cpp)
 
 # add arduino app path to the paths..
 ARD_LIBRARIES = $(ARDUINO_LIBRARIES)
-ARD_LIBRARIES_PATH = $(ARDUINO_APP_PATH)/$(ARDUINO_LIBRARIES_PATH)
+ARD_LIBRARIES_PATH = $(ARDUINO_APP_PATH)$(ARDUINO_LIBRARIES_PATH)
 ARD_PATH = $(ARDUINO_APP_PATH)$(ARDUINO_PATH)
 
 # make the correct paths for the libraries
-INCLUDE_LIBRARIES = $(addprefix -I$(ARD_LIBRARIES_PATH),$(ARD_LIBRARIES)) \
+INCLUDE_LIBRARIES = $(addprefix -I$(ARD_LIBRARIES_PATH)/,$(ARD_LIBRARIES)) \
 $(addprefix -I, $(wildcard $(LIBRARY_PATHS)))
 
 # find .cpp files in libraries
