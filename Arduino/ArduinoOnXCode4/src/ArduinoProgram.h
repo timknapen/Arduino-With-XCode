@@ -12,6 +12,7 @@
 
 
 #include "TestThing.h"
+#include "Servo.h"
 
 class ArduinoProgram {
 public:
@@ -26,7 +27,9 @@ public:
 	
 	// a class in our src/ folder
 	TestThing* thing;
-	
+    
+    // class in standard Arduino libraries
+    Servo * servo;
     
 };
 

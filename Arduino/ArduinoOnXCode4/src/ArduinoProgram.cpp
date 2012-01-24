@@ -12,6 +12,9 @@ void ArduinoProgram::setup(){
 	//our class from our src/ folder
 	thing = new TestThing();
 	thing -> setup();
+    
+    // XCode does completion for this now too!
+    servo->readMicroseconds();
 }
 
 

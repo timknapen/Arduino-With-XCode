@@ -1,6 +1,28 @@
 // Basic settings for an Arduino Board
 
 ARDUINO_APP_PATH = /Applications/Arduino.app
+BOARDS_TXT_PATH = /Contents/Resources/Java/hardware/arduino/boards.txt
 ARDUINO_PATH = /Contents/Resources/Java/hardware/arduino/cores/arduino
 ARDUINO_LIBRARIES_PATH = /Contents/Resources/Java/libraries
 ARDUINO_LIBRARIES = Wire Wire/utility EEPROM Ethernet Ethernet/utility  SPI Firmata LiquidCrystal Matrix Sprite SD SD/utility Servo SoftwareSerial Stepper 
+BOARDNAME = atmega328 atmega168 atmega8 bt bt328 diecimila fio lilypad lilypad328 mega mega2560 mini pro5v pro5v328 uno      
+PORT = /dev/tty.usbserial* or /dev/tty.usbmodem*
+LIBRARY_PATHS =
+
+// possible boardnames: 
+// uno
+// atmega328
+// diecimila
+// mega2560
+// mega
+// mini
+// fio
+// bt328
+// bt
+// lilypad328
+// lilypad
+// pro5v328
+// pro5v
+// pro
+// atmega168
+// atmega8

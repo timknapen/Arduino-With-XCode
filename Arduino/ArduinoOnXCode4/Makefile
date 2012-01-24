@@ -1,4 +1,4 @@
-
+#XCODE 4
 
 AVRDUDE_DIR = $(ARDUINO_APP_PATH)/Contents/Resources/Java/hardware/tools/avr/bin
 AVRDUDE_CONF= $(ARDUINO_APP_PATH)/Contents/Resources/Java/hardware/tools/avr/etc/avrdude.conf
@@ -7,16 +7,36 @@ SOURCES = $(wildcard src/*.cpp)
 
 # add arduino app path to the paths..
 ARD_LIBRARIES = $(ARDUINO_LIBRARIES)
-ARD_LIBRARIES_PATH = $(ARDUINO_APP_PATH)$(ARDUINO_LIBRARIES_PATH)
+ARD_LIBRARIES_PATH = $(ARDUINO_APP_PATH)/$(ARDUINO_LIBRARIES_PATH)
 ARD_PATH = $(ARDUINO_APP_PATH)$(ARDUINO_PATH)
 
 # make the correct paths for the libraries
-INCLUDE_LIBRARIES = $(addprefix -I$(ARD_LIBRARIES_PATH)/,$(ARD_LIBRARIES)) \
-$(addprefix -I,  $(wildcard $(LIBRARY_PATHS)))
+INCLUDE_LIBRARIES = $(addprefix -I$(ARD_LIBRARIES_PATH),$(ARD_LIBRARIES)) \
+$(addprefix -I, $(wildcard $(LIBRARY_PATHS)))
 
 # find .cpp files in libraries
-CPP_LIBRARIES = $(foreach lib,$(ARD_LIBRARIES),$(wildcard $(ARD_LIBRARIES_PATH)/$(lib)/*.cpp))
+CPP_LIBRARIES = $(foreach lib,$(ARD_LIBRARIES),$(wildcard $(ARD_LIBRARIES_PATH)$(lib)/*.cpp))
 CPP_LIBRARIES += $(foreach item, $(LIBRARY_PATHS), $(wildcard $(item)/*.cpp))
+
+
+BOARDS_TXT = $(ARDUINO_APP_PATH)$(BOARDS_TXT_PATH)
+
+# result = $(call READ_BOARD_TXT, 'boardname.parameter', 'pathfileboards.txt')
+nullstring  :=
+spacestring := $(nullstring) # end of the line
+equalstring := $(nullstring)=# end of the line
+#READ_BOARD_TXT = $(lastword $(subst $(equalstring),$(spacestring),$(shell grep -e$(1) $(2)))) 
+READ_BOARD_TXT = $(subst $(1)=,, $(shell grep -e$(1) $(2)))
+
+parameter = build.f_cpu
+F_CPU = $(call READ_BOARD_TXT, $(BOARDNAME).build.f_cpu, $(BOARDS_TXT))
+DESCRIPTION = $(call READ_BOARD_TXT, $(BOARDNAME).name, $(BOARDS_TXT))
+MCU = $(call READ_BOARD_TXT, $(BOARDNAME).build.mcu, $(BOARDS_TXT))
+UPLOAD_RATE = $(call READ_BOARD_TXT, $(BOARDNAME).upload.speed, $(BOARDS_TXT))
+FORMAT = ihex
+
+
+
 
 # main file
 TARGET = main
@@ -113,13 +133,22 @@ sym: bin/$(TARGET).sym
 # print info
 info:
 	@echo "------------------------ some info for debugging ------------------";
-	@echo "Using board: " $(BOARD);
-	@echo "Library paths: " $(LIBRARY_PATHS);
-	@echo "Library cpp files: " $(foreach item,$(LIBRARY_PATHS), $(wildcard $(item)/*.cpp));
-	@echo "Compiling sources: " $(CXXSRC);
-	@echo "Compiling libraries sources: " $(CPP_LIBRARIES);
-	@echo "Included libraries: " $(INCLUDE_LIBRARIES);
+	@echo "board name: \t" $(BOARDNAME);
+	@echo "description: \t" $(DESCRIPTION);
+	@echo "cpu: \t\t\t" $(F_CPU); 
+	@echo "mcu: \t\t" $(MCU);
+	@echo "upload speed: \t" $(UPLOAD_RATE);
+	@echo "port: \t\t" $(PORT);
+	
+	@echo " ";
+
+	@echo "Library paths: \n\t" $(LIBRARY_PATHS);
+	@echo "Library cpp files: \n\t" $(foreach item,$(LIBRARY_PATHS), $(wildcard $(item)/*.cpp));
+	@echo "Compiling sources: \n\t" $(CXXSRC);
+	@echo "Compiling libraries sources: \n\t" $(CPP_LIBRARIES);
+	@echo "Included libraries: \n\t" $(INCLUDE_LIBRARIES);
 	@echo "------------------------ end of debugging info --------------------";
+	@echo " ";
 	
 # create the bin folder if it doesn't exist
 folder:
@@ -128,8 +157,6 @@ folder:
 # Program the device.  
 upload: bin/$(TARGET).hex
 	$(AVRDUDE) -C$(AVRDUDE_CONF) $(AVRDUDE_FLAGS) $(AVRDUDE_WRITE_FLASH)
-    @echo "action = upload";
-
 
 # Display size of file.
 HEXSIZE = $(SIZE) --target=$(FORMAT) bin/$(TARGET).hex
