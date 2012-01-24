@@ -182,7 +182,7 @@
 		2259D18D14C855160021B514 /* Wire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wire.h; sourceTree = "<group>"; };
 		2259D19414C85BB30021B514 /* _basic_arduino_settings.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = _basic_arduino_settings.xcconfig; sourceTree = "<group>"; };
 		2259D19514C85BB30021B514 /* Sanguino.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Sanguino.xcconfig; sourceTree = "<group>"; };
-		228929F814CECF3400452A11 /* fake target */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "fake target"; sourceTree = BUILT_PRODUCTS_DIR; };
+		228929F814CECF3400452A11 /* fake target */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = "fake target"; path = "/Users/tim/Desktop/Arduino-With-XCode/Arduino/ArduinoOnXCode4/build/Release/fake target"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,7 +205,6 @@
 				2259D08914C854960021B514 /* arduino */,
 				2259D0AF14C855150021B514 /* libraries */,
 				19A5FEEE1475790300FAEAAB /* config */,
-				228929F814CECF3400452A11 /* fake target */,
 			);
 			sourceTree = "<group>";
 		};
